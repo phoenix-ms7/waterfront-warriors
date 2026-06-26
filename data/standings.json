@@ -1,0 +1,32 @@
+{
+  "last_updated": "2026-06-26",
+  "group": "Group C",
+  "playoff_cutoff": 8,
+  "season": "2026 Weekenders",
+  "standings": [
+    {"rank": 1, "team": "Storm Riders",         "played": 6, "won": 5, "lost": 1, "points": 10, "nrr": "+0.842"},
+    {"rank": 2, "team": "Thunder Hawks",         "played": 6, "won": 4, "lost": 2, "points": 8,  "nrr": "+0.421"},
+    {"rank": 3, "team": "Bay Area Blasters",     "played": 6, "won": 4, "lost": 2, "points": 8,  "nrr": "+0.318"},
+    {"rank": 4, "team": "Waterfront Warriors",   "played": 5, "won": 4, "lost": 1, "points": 8,  "nrr": "+0.612", "isUs": true},
+    {"rank": 5, "team": "Speed Demons",          "played": 6, "won": 3, "lost": 3, "points": 6,  "nrr": "+0.124"},
+    {"rank": 6, "team": "Express Rangers",       "played": 6, "won": 3, "lost": 3, "points": 6,  "nrr": "-0.218"},
+    {"rank": 7, "team": "Coastal Kings",         "played": 6, "won": 2, "lost": 4, "points": 4,  "nrr": "-0.445"},
+    {"rank": 8, "team": "City Challengers",      "played": 6, "won": 2, "lost": 4, "points": 4,  "nrr": "-0.521"},
+    {"rank": 9, "team": "Monsoon Men",           "played": 6, "won": 1, "lost": 5, "points": 2,  "nrr": "-0.892"},
+    {"rank":10, "team": "The Sixes",             "played": 6, "won": 1, "lost": 5, "points": 2,  "nrr": "-1.123"}
+  ],
+  "remaining_schedule": [
+    {"date": "2026-06-28", "opponent": "Storm Riders",   "category": "swing",    "reason": "League leaders but winnable at home"},
+    {"date": "2026-07-05", "opponent": "Coastal Kings",  "category": "mustwin",  "reason": "Lower-table side — must take maximum points"},
+    {"date": "2026-07-12", "opponent": "City Challengers","category": "mustwin", "reason": "Below the cut line — strong favourite"},
+    {"date": "2026-07-19", "opponent": "Monsoon Men",    "category": "mustwin",  "reason": "Bottom-half team — expected 3 points"}
+  ],
+  "qualification_model": {
+    "current_points": 8,
+    "games_remaining": 4,
+    "points_to_qualify": 14,
+    "wins_needed": 3,
+    "note": "3 wins from 4 remaining games should comfortably secure a top-8 finish. A 4-0 run puts us in the top 3."
+  },
+  "briefing": "We sit 4th in Group C with 8 points from 5 games — a game in hand on most rivals. Three wins from our four remaining games should lock up a playoff spot. The Storm Riders match on June 28 is the key swing game; wins in the other three are expected."
+}

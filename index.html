@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waterfront Warriors — Strategy Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green-dark:  #1a3a1a;
+      --green-mid:   #2d5a2d;
+      --green-light: #7aaa7a;
+      --gold:        #c8a84b;
+      --cream:       #f7f6f2;
+      --white:       #ffffff;
+      --text-dark:   #1a2e1a;
+      --text-muted:  #5a7a5a;
+      --border:      #e0ddd5;
+      --shadow:      0 1px 4px rgba(0,0,0,0.07);
+      --radius:      8px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--text-dark); min-height: 100vh; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ── HEADER ── */
+    header { background: var(--green-dark); padding: 0 1.5rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+    .header-top { display: flex; align-items: center; gap: 0.9rem; padding: 0.9rem 0 0.6rem; }
+    .logo { width: 42px; height: 42px; background: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Bebas Neue', sans-serif; font-size: 1rem; color: var(--green-dark); flex-shrink: 0; letter-spacing: 0.05em; }
+    .header-text h1 { font-family: 'Bebas Neue', sans-serif; font-size: 1.45rem; color: #fff; letter-spacing: 0.06em; line-height: 1.1; }
+    .header-text p { font-size: 0.65rem; color: var(--green-light); letter-spacing: 0.12em; text-transform: uppercase; }
+    .last-updated { margin-left: auto; font-size: 0.68rem; color: rgba(255,255,255,0.35); white-space: nowrap; }
+    nav { display: flex; overflow-x: auto; scrollbar-width: none; }
+    nav::-webkit-scrollbar { display: none; }
+    .tab-btn { background: none; border: none; border-bottom: 2px solid transparent; color: rgba(255,255,255,0.45); font-family: 'DM Sans', sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.65rem 1.1rem; cursor: pointer; white-space: nowrap; transition: color 0.15s, border-color 0.15s; }
+    .tab-btn:hover { color: rgba(255,255,255,0.8); }
+    .tab-btn.active { color: var(--gold); border-bottom-color: var(--gold); }
+
+    /* ── LAYOUT ── */
+    main { max-width: 1100px; margin: 0 auto; padding: 1.75rem 1.25rem 3rem; }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+
+    /* ── TYPOGRAPHY ── */
+    .section-title { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; color: var(--green-dark); letter-spacing: 0.05em; margin-bottom: 1.1rem; }
+    .sub-label { font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem; }
+
+    /* ── SEASON FILTER ── */
+    .season-filter { display: flex; gap: 0.5rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+    .season-btn { background: var(--white); border: 1px solid var(--border); border-radius: 20px; padding: 0.35rem 1rem; font-family: 'DM Sans', sans-serif; font-size: 0.78rem; font-weight: 500; color: var(--text-muted); cursor: pointer; transition: all 0.15s; }
+    .season-btn:hover { border-color: var(--green-mid); color: var(--green-mid); }
+    .season-btn.active { background: var(--green-dark); border-color: var(--green-dark); color: #fff; }
+
+    /* ── HIGHLIGHT CARDS ── */
+    .highlight-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 2rem; }
+    @media (max-width: 700px) { .highlight-grid { grid-template-columns: repeat(2, 1fr); } }
+    .highlight-card { background: var(--white); border-radius: var(--radius); padding: 1.1rem 1.2rem; box-shadow: var(--shadow); }
+    .highlight-card .h-label { font-size: 0.68rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.09em; margin-bottom: 0.4rem; }
+    .highlight-card .h-val { font-family: 'Bebas Neue', sans-serif; font-size: 2.1rem; color: var(--green-dark); line-height: 1; }
+    .highlight-card .h-name { font-size: 0.82rem; font-weight: 600; color: var(--text-dark); margin-top: 0.2rem; }
+    .highlight-card .h-sub { font-size: 0.65rem; color: var(--gold); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin-top: 0.1rem; }
+
+    /* ── TABLES ── */
+    .table-section { margin-bottom: 2.25rem; }
+    .table-wrap { overflow-x: auto; border-radius: var(--radius); box-shadow: var(--shadow); }
+    table { width: 100%; border-collapse: collapse; background: var(--white); font-size: 0.82rem; }
+    thead th { background: var(--green-dark); color: rgba(255,255,255,0.65); font-size: 0.68rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.7rem 0.85rem; text-align: left; cursor: pointer; user-select: none; white-space: nowrap; transition: color 0.15s; }
+    thead th:hover, thead th.sorted { color: var(--gold); }
+    thead th.sort-asc::after { content: ' ↑'; color: var(--gold); }
+    thead th.sort-desc::after { content: ' ↓'; color: var(--gold); }
+    tbody tr:nth-child(even) { background: #f9f8f5; }
+    tbody tr:hover { background: #f0efe9; }
+    td { padding: 0.6rem 0.85rem; color: var(--text-dark); border-bottom: 1px solid var(--border); white-space: nowrap; }
+    tbody tr:last-child td { border-bottom: none; }
+    td.p-name { font-weight: 600; color: var(--green-dark); }
+    td.p-rank { color: var(--text-muted); font-size: 0.75rem; }
+    tr.warriors-row { background: rgba(200,168,75,0.1) !important; }
+    tr.warriors-row td { font-weight: 600; }
+    tr.warriors-row td.p-name { color: var(--gold) !important; }
+
+    /* ── CARD ── */
+    .card { background: var(--white); border-radius: var(--radius); padding: 1.25rem; box-shadow: var(--shadow); }
+    .card-title { font-family: 'Bebas Neue', sans-serif; font-size: 1.05rem; color: var(--green-dark); letter-spacing: 0.05em; margin-bottom: 0.85rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+
+    /* ── STRATEGY ── */
+    .strategy-banner { background: var(--green-dark); border-radius: var(--radius); padding: 1.4rem 1.6rem; margin-bottom: 1.5rem; }
+    .strategy-banner .s-meta { font-size: 0.7rem; color: var(--green-light); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.35rem; }
+    .strategy-banner h2 { font-family: 'Bebas Neue', sans-serif; font-size: 1.7rem; color: var(--gold); letter-spacing: 0.05em; margin-bottom: 0.65rem; }
+    .strategy-banner .s-approach { font-size: 0.87rem; color: rgba(255,255,255,0.85); line-height: 1.65; }
+
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; margin-bottom: 1.5rem; }
+    @media (max-width: 600px) { .two-col { grid-template-columns: 1fr; } }
+
+    .bat-order-list { list-style: none; }
+    .bat-order-list li { display: flex; gap: 0.7rem; align-items: flex-start; padding: 0.55rem 0; border-bottom: 1px solid var(--border); }
+    .bat-order-list li:last-child { border-bottom: none; }
+    .bat-pos { width: 22px; height: 22px; min-width: 22px; background: var(--green-dark); color: var(--gold); border-radius: 50%; font-size: 0.65rem; font-weight: 700; display: flex; align-items: center; justify-content: center; margin-top: 0.15rem; }
+    .bat-info .bat-player { font-weight: 600; font-size: 0.83rem; }
+    .bat-info .bat-role { font-size: 0.65rem; color: var(--gold); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+    .bat-info .bat-reason { font-size: 0.76rem; color: var(--text-muted); margin-top: 0.15rem; line-height: 1.45; }
+
+    .bowling-phases { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1.5rem; }
+    @media (max-width: 600px) { .bowling-phases { grid-template-columns: 1fr; } }
+    .phase-card { background: var(--white); border-radius: var(--radius); padding: 1rem; box-shadow: var(--shadow); border-top: 3px solid var(--green-mid); }
+    .phase-card.death { border-top-color: var(--gold); }
+    .phase-lbl { font-size: 0.63rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); }
+    .phase-overs { font-family: 'Bebas Neue', sans-serif; font-size: 1rem; color: var(--green-dark); margin-bottom: 0.65rem; }
+    .phase-bowl-list { list-style: none; }
+    .phase-bowl-list li { padding: 0.35rem 0; border-bottom: 1px solid var(--border); font-size: 0.78rem; }
+    .phase-bowl-list li:last-child { border-bottom: none; }
+    .pbowler { font-weight: 600; }
+    .pbowler-overs { font-size: 0.7rem; color: var(--gold); font-weight: 600; }
+    .pbowler-reason { font-size: 0.72rem; color: var(--text-muted); margin-top: 0.1rem; line-height: 1.4; }
+
+    .matchup-list { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+    .matchup-item { padding: 0.7rem 0.85rem; background: #f9f8f5; border-left: 3px solid var(--gold); border-radius: 0 4px 4px 0; font-size: 0.82rem; line-height: 1.55; color: var(--text-dark); }
+
+    /* ── OPPONENT ── */
+    .opp-selector { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+    select { padding: 0.55rem 0.9rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--white); font-family: 'DM Sans', sans-serif; font-size: 0.85rem; color: var(--text-dark); cursor: pointer; min-width: 210px; }
+    .tw-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem; }
+    @media (max-width: 600px) { .tw-grid { grid-template-columns: 1fr; } }
+    .threat-card { border-top: 3px solid #e74c3c; }
+    .weakness-card { border-top: 3px solid var(--green-mid); }
+    .tag { display: inline-block; padding: 0.15rem 0.55rem; border-radius: 20px; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.6rem; }
+    .tag-threat { background: #fde8e8; color: #c0392b; }
+    .tag-ok { background: #e8f5e9; color: #2d7a3a; }
+    .txt-list { list-style: none; display: flex; flex-direction: column; gap: 0.45rem; }
+    .txt-list li { font-size: 0.82rem; line-height: 1.5; padding-left: 0.85rem; position: relative; color: var(--text-dark); }
+    .txt-list li::before { content: '—'; position: absolute; left: 0; color: var(--text-muted); }
+    .h2h-bar { display: flex; gap: 2rem; flex-wrap: wrap; margin-top: 0.75rem; }
+    .h2h-stat { text-align: center; }
+    .h2h-num { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; color: var(--green-dark); line-height: 1; }
+    .h2h-lbl { font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 0.1rem; }
+    .counter-section { margin-top: 1.5rem; }
+    .counter-block { background: #f9f8f5; border-radius: 6px; padding: 0.85rem 1rem; margin-bottom: 0.75rem; font-size: 0.83rem; line-height: 1.6; color: var(--text-dark); }
+    .counter-block strong { color: var(--green-dark); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; display: block; margin-bottom: 0.35rem; }
+
+    /* ── PLAYOFFS ── */
+    .briefing { background: var(--green-dark); color: rgba(255,255,255,0.9); border-radius: var(--radius); padding: 1.2rem 1.5rem; margin-bottom: 1.5rem; font-size: 0.87rem; line-height: 1.65; }
+    .briefing strong { color: var(--gold); }
+    .cut-row td { background: #fff3cd !important; color: #856404 !important; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; text-align: center; }
+    .cat-badge { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 3px; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; }
+    .cat-mustwin { background: #fde8e8; color: #c0392b; }
+    .cat-swing    { background: #fff3cd; color: #856404; }
+    .cat-upset    { background: #e8f5e9; color: #2d7a3a; }
+    .qual-note { margin-top: 1.1rem; padding: 0.85rem 1rem; background: #f9f8f5; border-left: 3px solid var(--green-mid); border-radius: 0 4px 4px 0; font-size: 0.83rem; line-height: 1.55; color: var(--text-dark); }
+
+    /* ── MEDIA ── */
+    .media-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 1.25rem; }
+    .media-card { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+    .video-wrap { position: relative; padding-bottom: 56.25%; background: var(--green-dark); }
+    .video-wrap iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+    .video-placeholder { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.25); font-size: 0.8rem; text-align: center; padding: 1rem; }
+    .media-info { padding: 0.9rem 1rem; }
+    .res-badge { display: inline-block; padding: 0.12rem 0.5rem; border-radius: 3px; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.4rem; }
+    .res-w { background: #e8f5e9; color: #2d7a3a; }
+    .res-l { background: #fde8e8; color: #c0392b; }
+    .res-nr { background: #f0f0f0; color: #666; }
+    .media-title { font-weight: 600; font-size: 0.87rem; margin-bottom: 0.2rem; }
+    .media-score { font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.15rem; }
+    .media-date { font-size: 0.72rem; color: var(--text-muted); }
+
+    /* ── EMPTY STATE ── */
+    .empty { text-align: center; padding: 2.5rem; color: var(--text-muted); background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); font-size: 0.88rem; }
+    .loading { text-align: center; padding: 3rem; color: var(--text-muted); font-size: 0.88rem; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <div class="logo">WW</div>
+    <div class="header-text">
+      <h1>Waterfront Warriors</h1>
+      <p>Strategy Hub</p>
+    </div>
+    <span class="last-updated" id="lastUpdated"></span>
+  </div>
+  <nav>
+    <button class="tab-btn active" data-tab="dashboard">Dashboard</button>
+    <button class="tab-btn" data-tab="strategy">Strategy</button>
+    <button class="tab-btn" data-tab="opponent">Opponent Intel</button>
+    <button class="tab-btn" data-tab="playoffs">Playoffs</button>
+    <button class="tab-btn" data-tab="media">Media</button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ════ DASHBOARD ════ -->
+  <section id="tab-dashboard" class="tab-content active">
+    <div class="season-filter">
+      <button class="season-btn active" data-season="all">All Time</button>
+      <button class="season-btn" data-season="2026">2026 Weekenders</button>
+      <button class="season-btn" data-season="2025">2025 T20</button>
+    </div>
+    <div class="highlight-grid" id="highlights"></div>
+    <div class="table-section">
+      <p class="sub-label">Batting</p>
+      <div class="table-wrap" id="batTable"></div>
+    </div>
+    <div class="table-section">
+      <p class="sub-label">Bowling</p>
+      <div class="table-wrap" id="bowlTable"></div>
+    </div>
+  </section>
+
+  <!-- ════ STRATEGY ════ -->
+  <section id="tab-strategy" class="tab-content">
+    <div id="strategyContent"><div class="loading">Loading strategy…</div></div>
+  </section>
+
+  <!-- ════ OPPONENT INTEL ════ -->
+  <section id="tab-opponent" class="tab-content">
+    <div class="opp-selector">
+      <select id="oppSelect"><option value="">Select opponent…</option></select>
+    </div>
+    <div id="oppContent"><div class="empty">Select an opponent above to view their intel.</div></div>
+  </section>
+
+  <!-- ════ PLAYOFFS ════ -->
+  <section id="tab-playoffs" class="tab-content">
+    <div id="playoffsContent"><div class="loading">Loading standings…</div></div>
+  </section>
+
+  <!-- ════ MEDIA ════ -->
+  <section id="tab-media" class="tab-content">
+    <p class="section-title">Match Media</p>
+    <div class="media-grid" id="mediaGrid"></div>
+  </section>
+
+</main>
+
+<script>
+// ─────────────────────────────────────────────
+// STATE
+// ─────────────────────────────────────────────
+const S = {
+  season: 'all',
+  batSort: { col: 'runs', dir: 'desc' },
+  bowlSort: { col: 'wkts', dir: 'desc' },
+  oppBatSort: { col: 'runs', dir: 'desc' },
+  oppBowlSort: { col: 'wkts', dir: 'desc' },
+};
+
+const DB = { batting: [], bowling: [], matches: [], strategy: {}, standings: {}, oppList: [] };
+
+// ─────────────────────────────────────────────
+// FETCH
+// ─────────────────────────────────────────────
+async function get(url) {
+  try { const r = await fetch(url); return r.ok ? r.json() : null; } catch { return null; }
+}
+
+async function init() {
+  const [bat, bowl, matches, strat, stand, oppList] = await Promise.all([
+    get('./data/warriors_batting.json'),
+    get('./data/warriors_bowling.json'),
+    get('./data/warriors_matches.json'),
+    get('./data/strategy.json'),
+    get('./data/standings.json'),
+    get('./data/opponents/index.json'),
+  ]);
+  DB.batting  = bat      || [];
+  DB.bowling  = bowl     || [];
+  DB.matches  = matches  || [];
+  DB.strategy = strat    || {};
+  DB.standings = stand   || {};
+  DB.oppList  = oppList  || [];
+
+  const lu = DB.strategy.last_updated || (DB.batting[0] && DB.batting[0].last_updated);
+  if (lu) document.getElementById('lastUpdated').textContent = 'Updated ' + lu;
+
+  setupTabs();
+  setupSeasonBtns();
+  setupOppSelect();
+  renderDashboard();
+  renderStrategy();
+  renderPlayoffs();
+  renderMedia();
+}
+
+// ─────────────────────────────────────────────
+// TABS
+// ─────────────────────────────────────────────
+function setupTabs() {
+  document.querySelectorAll('.tab-btn').forEach(b => {
+    b.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(x => x.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(x => x.classList.remove('active'));
+      b.classList.add('active');
+      document.getElementById('tab-' + b.dataset.tab).classList.add('active');
+    });
+  });
+}
+
+// ─────────────────────────────────────────────
+// SEASON FILTER
+// ─────────────────────────────────────────────
+function setupSeasonBtns() {
+  document.querySelectorAll('.season-btn').forEach(b => {
+    b.addEventListener('click', () => {
+      document.querySelectorAll('.season-btn').forEach(x => x.classList.remove('active'));
+      b.classList.add('active');
+      S.season = b.dataset.season;
+      renderDashboard();
+    });
+  });
+}
+
+// ─────────────────────────────────────────────
+// AGGREGATION HELPERS
+// ─────────────────────────────────────────────
+function oversToB(o) { const w = Math.floor(o); return w * 6 + Math.round((o - w) * 10); }
+function bToOvers(b) { return parseFloat((Math.floor(b/6) + (b%6)/10).toFixed(1)); }
+
+function getBatting() {
+  const rows = S.season === 'all' ? DB.batting : DB.batting.filter(r => r.season === S.season);
+  if (S.season !== 'all') return rows;
+  const m = {};
+  rows.forEach(r => {
+    if (!m[r.name]) m[r.name] = { name: r.name, mat:0, ins:0, no:0, runs:0, balls:0, hs:0, fifties:0, twentyfives:0 };
+    const p = m[r.name];
+    p.mat += r.mat; p.ins += r.ins; p.no += r.no;
+    p.runs += r.runs; p.balls += r.balls;
+    p.hs = Math.max(p.hs, r.hs);
+    p.fifties += r.fifties; p.twentyfives += r.twentyfives;
+  });
+  return Object.values(m).map(p => ({
+    ...p,
+    avg: p.ins - p.no > 0 ? +(p.runs / (p.ins - p.no)).toFixed(2) : p.runs,
+    sr:  p.balls > 0 ? +((p.runs / p.balls) * 100).toFixed(2) : 0,
+  }));
+}
+
+function getBowling() {
+  const rows = S.season === 'all' ? DB.bowling : DB.bowling.filter(r => r.season === S.season);
+  if (S.season !== 'all') return rows;
+  const m = {};
+  rows.forEach(r => {
+    if (!m[r.name]) m[r.name] = { name: r.name, mat:0, inns:0, balls:0, runs:0, wkts:0, dots:0, bbf:'-', _bW:0, _bR:999 };
+    const p = m[r.name];
+    p.mat += r.mat; p.inns += r.inns; p.balls += oversToB(r.overs);
+    p.runs += r.runs; p.wkts += r.wkts; p.dots += r.dots;
+    const [bR, bW] = r.bbf.split('/').map(Number);
+    if (bW > p._bW || (bW === p._bW && bR < p._bR)) { p._bW = bW; p._bR = bR; p.bbf = r.bbf; }
+  });
+  return Object.values(m).map(p => ({
+    ...p,
+    overs: bToOvers(p.balls),
+    econ:  p.balls > 0 ? +((p.runs / p.balls) * 6).toFixed(2) : 0,
+    ave:   p.wkts > 0 ? +(p.runs / p.wkts).toFixed(2) : null,
+    sr:    p.wkts > 0 ? +(p.balls / p.wkts).toFixed(1) : null,
+  }));
+}
+
+// ─────────────────────────────────────────────
+// TABLE BUILDER
+// ─────────────────────────────────────────────
+function sortData(rows, sortState) {
+  const { col, dir } = sortState;
+  return [...rows].sort((a, b) => {
+    let va = parseFloat(a[col]); if (isNaN(va)) va = 0;
+    let vb = parseFloat(b[col]); if (isNaN(vb)) vb = 0;
+    return dir === 'desc' ? vb - va : va - vb;
+  });
+}
+
+function buildTable(rows, cols, sortState, onHeaderClick) {
+  if (!rows.length) return '<div class="empty">No data available.</div>';
+  const sorted = sortData(rows, sortState);
+  const ths = cols.map(c => {
+    let cls = '';
+    if (c.sortable !== false) {
+      if (sortState.col === c.key) cls = sortState.dir === 'desc' ? 'sort-desc' : 'sort-asc';
+    }
+    const handler = c.sortable !== false ? `onclick="${onHeaderClick}('${c.key}')"` : '';
+    return `<th class="${cls}" ${handler}>${c.label}</th>`;
+  }).join('');
+  const trs = sorted.map((row, i) => {
+    const tds = cols.map(c => {
+      let val = c.key === '#' ? i + 1 : row[c.key];
+      if (c.fmt) val = c.fmt(val);
+      else if (val === null || val === undefined) val = '—';
+      const cls = c.cls ? ` class="${c.cls}"` : '';
+      return `<td${cls}>${val}</td>`;
+    }).join('');
+    return `<tr>${tds}</tr>`;
+  }).join('');
+  return `<table><thead><tr>${ths}</tr></thead><tbody>${trs}</tbody></table>`;
+}
+
+const BAT_COLS = [
+  { key:'#', label:'#', sortable:false },
+  { key:'name', label:'Player', cls:'p-name' },
+  { key:'mat',  label:'Mat' },
+  { key:'ins',  label:'Ins' },
+  { key:'no',   label:'NO' },
+  { key:'runs', label:'Runs' },
+  { key:'balls',label:'Balls' },
+  { key:'avg',  label:'Avg',  fmt: v => v != null ? parseFloat(v).toFixed(2) : '—' },
+  { key:'sr',   label:'SR',   fmt: v => v != null ? parseFloat(v).toFixed(2) : '—' },
+  { key:'hs',   label:'HS' },
+  { key:'fifties',    label:'50s' },
+  { key:'twentyfives',label:'25s' },
+];
+
+const BOWL_COLS = [
+  { key:'#',    label:'#', sortable:false },
+  { key:'name', label:'Player', cls:'p-name' },
+  { key:'mat',  label:'Mat' },
+  { key:'inns', label:'Inns' },
+  { key:'overs',label:'Overs' },
+  { key:'runs', label:'Runs' },
+  { key:'wkts', label:'Wkts' },
+  { key:'bbf',  label:'BBF', sortable:false },
+  { key:'dots', label:'Dots' },
+  { key:'econ', label:'Econ', fmt: v => v != null ? parseFloat(v).toFixed(2) : '—' },
+  { key:'ave',  label:'Ave',  fmt: v => v != null ? parseFloat(v).toFixed(2) : '—' },
+  { key:'sr',   label:'SR',   fmt: v => v != null ? parseFloat(v).toFixed(1) : '—' },
+];
+
+// ─────────────────────────────────────────────
+// DASHBOARD
+// ─────────────────────────────────────────────
+function renderDashboard() {
+  const bat  = getBatting();
+  const bowl = getBowling();
+  renderHighlights(bat, bowl);
+  document.getElementById('batTable').innerHTML  = buildTable(bat,  BAT_COLS,  S.batSort,  'sortBat');
+  document.getElementById('bowlTable').innerHTML = buildTable(bowl, BOWL_COLS, S.bowlSort, 'sortBowl');
+}
+
+function renderHighlights(bat, bowl) {
+  const byRuns  = [...bat].sort((a,b) => b.runs - a.runs)[0];
+  const bySR    = [...bat].filter(p => p.ins >= 2).sort((a,b) => b.sr - a.sr)[0];
+  const byWkts  = [...bowl].sort((a,b) => b.wkts - a.wkts)[0];
+  const byEcon  = [...bowl].filter(p => p.inns >= 2).sort((a,b) => a.econ - b.econ)[0];
+  const cards = [
+    { label:'Most Runs',      val: byRuns?.runs  ?? '—', name: byRuns?.name  ?? '—', sub:'Batting'  },
+    { label:'Best Strike Rate',val: bySR?.sr     ?? '—', name: bySR?.name    ?? '—', sub:'Batting'  },
+    { label:'Most Wickets',   val: byWkts?.wkts  ?? '—', name: byWkts?.name  ?? '—', sub:'Bowling'  },
+    { label:'Best Economy',   val: byEcon?.econ  ?? '—', name: byEcon?.name  ?? '—', sub:'Bowling'  },
+  ];
+  document.getElementById('highlights').innerHTML = cards.map(c => `
+    <div class="highlight-card">
+      <div class="h-label">${c.label}</div>
+      <div class="h-val">${c.val}</div>
+      <div class="h-name">${c.name}</div>
+      <div class="h-sub">${c.sub}</div>
+    </div>`).join('');
+}
+
+window.sortBat = col => {
+  S.batSort = { col, dir: S.batSort.col === col && S.batSort.dir === 'desc' ? 'asc' : 'desc' };
+  renderDashboard();
+};
+window.sortBowl = col => {
+  S.bowlSort = { col, dir: S.bowlSort.col === col && S.bowlSort.dir === 'desc' ? 'asc' : 'desc' };
+  renderDashboard();
+};
+
+// ─────────────────────────────────────────────
+// STRATEGY
+// ─────────────────────────────────────────────
+function renderStrategy() {
+  const d = DB.strategy;
+  if (!d || !d.next_match) {
+    document.getElementById('strategyContent').innerHTML = '<div class="empty">No strategy loaded. Run a weekly update to generate match strategy.</div>';
+    return;
+  }
+  const nm = d.next_match;
+  const batOrder = (d.batting_order || []).map(p => `
+    <li>
+      <div class="bat-pos">${p.position}</div>
+      <div class="bat-info">
+        <div class="bat-player">${p.name} <span class="bat-role">${p.role}</span></div>
+        <div class="bat-reason">${p.reason}</div>
+      </div>
+    </li>`).join('');
+
+  const br = d.bowling_rotation || {};
+  const phases = [
+    { key:'powerplay', label:'Powerplay', overs: br.powerplay?.overs, bowlers: br.powerplay?.bowlers || [] },
+    { key:'middle',    label:'Middle Overs', overs: br.middle?.overs,    bowlers: br.middle?.bowlers    || [] },
+    { key:'death',     label:'Death Overs',  overs: br.death?.overs,     bowlers: br.death?.bowlers     || [], cls:'death' },
+  ];
+  const phaseHtml = phases.map(ph => `
+    <div class="phase-card ${ph.cls || ''}">
+      <div class="phase-lbl">${ph.label}</div>
+      <div class="phase-overs">Overs ${ph.overs || ''}</div>
+      <ul class="phase-bowl-list">
+        ${ph.bowlers.map(b => `<li>
+          <div class="pbowler">${b.name} <span class="pbowler-overs">${b.overs}</span></div>
+          <div class="pbowler-reason">${b.reason}</div>
+        </li>`).join('')}
+      </ul>
+    </div>`).join('');
+
+  const matchups = (d.key_matchups || []).map(m => `<li class="matchup-item">${m}</li>`).join('');
+
+  document.getElementById('strategyContent').innerHTML = `
+    <div class="strategy-banner">
+      <div class="s-meta">${nm.format} &nbsp;·&nbsp; ${nm.venue || ''} &nbsp;·&nbsp; ${nm.date}</div>
+      <h2>vs ${nm.opponent}</h2>
+      <div class="s-approach">${d.match_approach}</div>
+    </div>
+    <div class="two-col">
+      <div class="card">
+        <div class="card-title">Batting Order</div>
+        <ul class="bat-order-list">${batOrder}</ul>
+      </div>
+      <div>
+        <div class="card" style="margin-bottom:1.1rem">
+          <div class="card-title">Key Matchups</div>
+          <ul class="matchup-list">${matchups}</ul>
+        </div>
+      </div>
+    </div>
+    <p class="sub-label">Bowling Rotation</p>
+    <div class="bowling-phases">${phaseHtml}</div>`;
+}
+
+// ─────────────────────────────────────────────
+// OPPONENT INTEL
+// ─────────────────────────────────────────────
+function setupOppSelect() {
+  const sel = document.getElementById('oppSelect');
+  DB.oppList.forEach(o => {
+    const opt = document.createElement('option');
+    opt.value = o.file; opt.textContent = o.teamName;
+    sel.appendChild(opt);
+  });
+  sel.addEventListener('change', async () => {
+    if (!sel.value) { document.getElementById('oppContent').innerHTML = '<div class="empty">Select an opponent above to view their intel.</div>'; return; }
+    document.getElementById('oppContent').innerHTML = '<div class="loading">Loading opponent data…</div>';
+    const opp = await get('./data/opponents/' + sel.value);
+    if (!opp) { document.getElementById('oppContent').innerHTML = '<div class="empty">Opponent data not yet available. Will be added before next match.</div>'; return; }
+    renderOpponent(opp);
+  });
+}
+
+function renderOpponent(opp) {
+  const batHtml  = buildTable(opp.batting  || [], BAT_COLS,  S.oppBatSort,  'sortOppBat');
+  const bowlHtml = buildTable(opp.bowling  || [], BOWL_COLS, S.oppBowlSort, 'sortOppBowl');
+  const h2h = opp.head_to_head || {};
+  const threats   = (opp.key_threats   || []).map(t => `<li>${t}</li>`).join('');
+  const weaknesses= (opp.key_weaknesses|| []).map(w => `<li>${w}</li>`).join('');
+
+  document.getElementById('oppContent').innerHTML = `
+    <div class="tw-grid" style="margin-bottom:1.5rem">
+      <div class="card threat-card">
+        <span class="tag tag-threat">Key Threats</span>
+        <ul class="txt-list">${threats}</ul>
+      </div>
+      <div class="card weakness-card">
+        <span class="tag tag-ok">Weaknesses</span>
+        <ul class="txt-list">${weaknesses}</ul>
+      </div>
+    </div>
+    <div class="card" style="margin-bottom:1.5rem">
+      <div class="card-title">Head to Head vs Waterfront Warriors</div>
+      <div class="h2h-bar">
+        <div class="h2h-stat"><div class="h2h-num">${h2h.total_matches ?? 0}</div><div class="h2h-lbl">Matches</div></div>
+        <div class="h2h-stat"><div class="h2h-num">${h2h.warriors_wins ?? 0}</div><div class="h2h-lbl">Our Wins</div></div>
+        <div class="h2h-stat"><div class="h2h-num">${h2h.opponent_wins ?? 0}</div><div class="h2h-lbl">Their Wins</div></div>
+      </div>
+      ${h2h.last_match ? `<p style="margin-top:.75rem;font-size:.78rem;color:var(--text-muted)">Last match ${h2h.last_match.date}:
+        Warriors ${h2h.last_match.warriorsScore} — ${opp.teamName} ${h2h.last_match.opponentScore}
+        (${h2h.last_match.result === 'W' ? '✓ We won' : '✗ We lost'})</p>` : ''}
+    </div>
+    <div class="table-section">
+      <p class="sub-label">Their Batting</p>
+      <div class="table-wrap">${batHtml}</div>
+    </div>
+    <div class="table-section">
+      <p class="sub-label">Their Bowling</p>
+      <div class="table-wrap">${bowlHtml}</div>
+    </div>
+    <div class="counter-section">
+      <p class="sub-label">Counter Strategy</p>
+      ${opp.counter_strategy ? `
+        <div class="counter-block"><strong>How to Bowl at Them</strong>${opp.counter_strategy.how_to_bowl}</div>
+        <div class="counter-block"><strong>Matchup Recommendations</strong>${opp.counter_strategy.matchup_recommendations}</div>` : ''}
+    </div>`;
+}
+
+window.sortOppBat  = col => { S.oppBatSort  = { col, dir: S.oppBatSort.col  === col && S.oppBatSort.dir  === 'desc' ? 'asc' : 'desc' }; document.getElementById('oppContent').querySelectorAll('.table-wrap')[0] && location.reload(); };
+window.sortOppBowl = col => { S.oppBowlSort = { col, dir: S.oppBowlSort.col === col && S.oppBowlSort.dir === 'desc' ? 'asc' : 'desc' }; };
+
+// ─────────────────────────────────────────────
+// PLAYOFFS
+// ─────────────────────────────────────────────
+function renderPlayoffs() {
+  const d = DB.standings;
+  if (!d || !d.standings) {
+    document.getElementById('playoffsContent').innerHTML = '<div class="empty">Standings not loaded.</div>';
+    return;
+  }
+  const cutoff = d.playoff_cutoff || 8;
+  const rows = d.standings.map((t, i) => {
+    const cutRow = i === cutoff ? `<tr class="cut-row"><td colspan="7">▲ Top ${cutoff} qualify for playoffs</td></tr>` : '';
+    const cls = t.isUs ? ' class="warriors-row"' : '';
+    const nameCls = t.isUs ? ' class="p-name"' : '';
+    return `${cutRow}<tr${cls}>
+      <td>${t.rank}</td>
+      <td${nameCls}>${t.team}${t.isUs ? ' ★' : ''}</td>
+      <td>${t.played}</td>
+      <td>${t.won}</td>
+      <td>${t.lost}</td>
+      <td>${t.points}</td>
+      <td>${t.nrr}</td>
+    </tr>`;
+  }).join('');
+
+  const schedule = (d.remaining_schedule || []).map(g => {
+    const badgeCls = { mustwin:'cat-mustwin', swing:'cat-swing', upset:'cat-upset' }[g.category] || '';
+    const badge = `<span class="cat-badge ${badgeCls}">${g.category}</span>`;
+    return `<tr><td>${g.date}</td><td class="p-name">vs ${g.opponent}</td><td>${badge}</td><td style="font-size:.78rem;color:var(--text-muted)">${g.reason}</td></tr>`;
+  }).join('');
+
+  const qm = d.qualification_model || {};
+  document.getElementById('playoffsContent').innerHTML = `
+    <div class="briefing">${d.briefing.replace(/\b(${['Warriors','4th','8 points','playoffs','June 28'].join('|')})\b/g, '<strong>$1</strong>')}</div>
+    <div class="two-col">
+      <div>
+        <p class="sub-label">${d.group} Standings</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>L</th><th>Pts</th><th>NRR</th></tr></thead>
+            <tbody>${rows}</tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <p class="sub-label">Remaining Schedule</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Date</th><th>Match</th><th>Category</th><th>Note</th></tr></thead>
+            <tbody>${schedule}</tbody>
+          </table>
+        </div>
+        ${qm.note ? `<div class="qual-note">${qm.note}</div>` : ''}
+      </div>
+    </div>`;
+}
+
+// ─────────────────────────────────────────────
+// MEDIA
+// ─────────────────────────────────────────────
+function renderMedia() {
+  const el = document.getElementById('mediaGrid');
+  if (!DB.matches.length) { el.innerHTML = '<div class="empty">No matches recorded yet.</div>'; return; }
+  const sorted = [...DB.matches].sort((a,b) => b.date.localeCompare(a.date));
+  el.innerHTML = sorted.map(m => {
+    const resCls = m.result === 'W' ? 'res-w' : m.result === 'L' ? 'res-l' : 'res-nr';
+    const resLabel = m.result === 'W' ? 'Win' : m.result === 'L' ? 'Loss' : 'N/R';
+    const video = m.youtubeUrl
+      ? `<iframe src="https://www.youtube.com/embed/${ytId(m.youtubeUrl)}" allowfullscreen loading="lazy"></iframe>`
+      : `<div class="video-placeholder">Highlight video<br>coming soon</div>`;
+    return `
+      <div class="media-card">
+        <div class="video-wrap">${video}</div>
+        <div class="media-info">
+          <span class="res-badge ${resCls}">${resLabel}</span>
+          <div class="media-title">vs ${m.opponent}</div>
+          <div class="media-score">WW ${m.warriorsScore} — ${m.opponent} ${m.opponentScore}</div>
+          <div class="media-date">${m.season} · ${m.date}</div>
+        </div>
+      </div>`;
+  }).join('');
+}
+
+function ytId(url) {
+  const m = url.match(/(?:v=|youtu\.be\/)([^&?/]+)/);
+  return m ? m[1] : '';
+}
+
+// ─────────────────────────────────────────────
+// BOOT
+// ─────────────────────────────────────────────
+init();
+</script>
+</body>
+</html>
