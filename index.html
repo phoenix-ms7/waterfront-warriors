@@ -125,6 +125,7 @@
     .weakness-card { border-top: 3px solid var(--green-mid); }
     .tag { display: inline-block; padding: 0.15rem 0.55rem; border-radius: 20px; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.6rem; }
     .tag-threat { background: #fde8e8; color: #c0392b; }
+    .tag-warn   { background: #fef3e2; color: #c47d1a; }
     .tag-ok { background: #e8f5e9; color: #2d7a3a; }
     .txt-list { list-style: none; display: flex; flex-direction: column; gap: 0.45rem; }
     .txt-list li { font-size: 0.82rem; line-height: 1.5; padding-left: 0.85rem; position: relative; color: var(--text-dark); }
@@ -549,7 +550,24 @@ function renderOpponent(opp) {
   const threats   = (opp.key_threats   || []).map(t => `<li>${t}</li>`).join('');
   const weaknesses= (opp.key_weaknesses|| []).map(w => `<li>${w}</li>`).join('');
 
+  const pt = opp.points_table || {};
+  const rankBadgeCls = opp.group_rank <= 4 ? 'tag-threat' : opp.group_rank <= 8 ? 'tag-warn' : 'tag-ok';
+  const standingsCard = opp.group_rank ? `
+    <div class="card" style="margin-bottom:1.5rem;display:flex;align-items:center;gap:2rem;flex-wrap:wrap">
+      <div style="display:flex;align-items:center;gap:.6rem">
+        <span class="tag ${rankBadgeCls}" style="font-size:1rem;padding:.3rem .8rem">Group B Rank #${opp.group_rank}</span>
+        <span style="font-size:.85rem;color:var(--text-muted)">${opp.group || 'Group B'} · Match ${opp.match_date || ''}</span>
+      </div>
+      <div style="display:flex;gap:1.5rem;flex-wrap:wrap">
+        <div style="text-align:center"><div style="font-size:1.1rem;font-weight:700">${pt.won ?? '—'}W / ${pt.lost ?? '—'}L</div><div style="font-size:.75rem;color:var(--text-muted)">Record (${pt.played ?? 9} games)</div></div>
+        <div style="text-align:center"><div style="font-size:1.1rem;font-weight:700">${pt.points ?? '—'} pts</div><div style="font-size:.75rem;color:var(--text-muted)">Points</div></div>
+        <div style="text-align:center"><div style="font-size:1.1rem;font-weight:700">${pt.nrr ?? '—'}</div><div style="font-size:.75rem;color:var(--text-muted)">NRR</div></div>
+        <div style="text-align:center"><div style="font-size:1.1rem;font-weight:700">${pt.win_pct ?? '—'}</div><div style="font-size:.75rem;color:var(--text-muted)">Win %</div></div>
+      </div>
+    </div>` : '';
+
   document.getElementById('oppContent').innerHTML = `
+    ${standingsCard}
     <div class="tw-grid" style="margin-bottom:1.5rem">
       <div class="card threat-card">
         <span class="tag tag-threat">Key Threats</span>

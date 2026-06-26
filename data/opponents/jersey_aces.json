@@ -1,0 +1,23 @@
+{
+  "teamName": "Jersey Aces",
+  "group": "Group B",
+  "group_rank": 18,
+  "match_date": "2026-07-11",
+  "points_table": {"played": 9, "won": 0, "lost": 8, "nr": 1, "tie": 0, "points": 2, "nrr": "-3.1603", "win_pct": "0.00%"},
+  "head_to_head": {},
+  "batting": [],
+  "bowling": [],
+  "key_threats": [
+    "Nothing to lose — may play with freedom and produce an unexpected performance",
+    "Watch for a solitary dangerman — even weak sides often have one quality batter"
+  ],
+  "key_weaknesses": [
+    "0 wins from 8 completed games — statistically the weakest batting lineup in Group B",
+    "NRR of -3.16 is second worst in Group B — significant run deficits in losses",
+    "No wins means minimal match experience under pressure — will likely fold in a chase"
+  ],
+  "counter_strategy": {
+    "how_to_bowl": "Keep it disciplined — there's a risk of complacency against a winless side. Stick to line and length, avoid giving easy singles. Target them out cheaply (under 60).",
+    "matchup_recommendations": "Ideal game to rest Ajinkya Pradhan for a couple of overs and develop depth. Give Siddhant Kumar and Amanraj Gupta more bowling time."
+  }
+}

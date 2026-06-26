@@ -1,0 +1,23 @@
+{
+  "teamName": "EB Strikers",
+  "group": "Group B",
+  "group_rank": 11,
+  "match_date": "2026-09-20",
+  "points_table": {"played": 9, "won": 4, "lost": 5, "nr": 0, "tie": 0, "points": 17, "nrr": "-0.4823", "win_pct": "44.44%"},
+  "head_to_head": {},
+  "batting": [],
+  "bowling": [],
+  "key_threats": [
+    "4 wins indicate genuine competitive quality — not to be taken lightly",
+    "Season closer — EB Strikers may be fighting to improve their own ranking"
+  ],
+  "key_weaknesses": [
+    "Slightly negative NRR (-0.48) shows they're more likely to lose close games than win them",
+    "5 losses means they have been inconsistent throughout the season",
+    "Season finale nerves can affect underdogs more than settled top-8 sides"
+  ],
+  "counter_strategy": {
+    "how_to_bowl": "Full intensity — season finale. End the regular season on a high. Pradhan and Rajpurohit to bowl their full allocation.",
+    "matchup_recommendations": "Win this to finish the regular season with maximum momentum going into playoffs. Aim to close with a strong NRR performance."
+  }
+}

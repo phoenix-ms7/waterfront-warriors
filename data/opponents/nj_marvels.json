@@ -1,0 +1,24 @@
+{
+  "teamName": "NJ Marvels",
+  "group": "Group B",
+  "group_rank": 4,
+  "match_date": "2026-08-30",
+  "points_table": {"played": 9, "won": 7, "lost": 1, "nr": 1, "tie": 0, "points": 34, "nrr": "+1.7578", "win_pct": "87.50%"},
+  "head_to_head": {},
+  "batting": [],
+  "bowling": [],
+  "key_threats": [
+    "7 wins from 9 — fourth strongest team in Group B, very consistent",
+    "NRR +1.76 shows they win comfortably — quality in both departments",
+    "1 NR result suggests a wide squad that adapts to conditions"
+  ],
+  "key_weaknesses": [
+    "1 loss shows they are beatable with a disciplined performance",
+    "NRR lower than Giant Slayers and Pway Cubs — possibly faced stronger opposition for that loss",
+    "WW playing this late-season (Aug 30) — will have match rhythm and confidence from earlier wins"
+  ],
+  "counter_strategy": {
+    "how_to_bowl": "Treat this like the Sinclair Lions game — full bowling attack. Use the experience gained from Pway Cubs and Giant Slayers matches. NJ Marvels are strong but their NRR gap (+1.76 vs WW's +0.68) suggests WW need a perfect performance.",
+    "matchup_recommendations": "By Aug 30, WW's playoff qualification should already be secured. Use this game to test batting combinations and bowl Tyagi in an extended spell to build his confidence."
+  }
+}

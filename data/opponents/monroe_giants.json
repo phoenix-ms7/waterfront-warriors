@@ -1,0 +1,23 @@
+{
+  "teamName": "Monroe Giants Club",
+  "group": "Group B",
+  "group_rank": 19,
+  "match_date": "2026-07-25",
+  "points_table": {"played": 9, "won": 0, "lost": 9, "nr": 0, "tie": 0, "points": -2, "nrr": "-4.3190", "win_pct": "0.00%"},
+  "head_to_head": {},
+  "batting": [],
+  "bowling": [],
+  "key_threats": [
+    "Rock-bottom side — minimal genuine threat",
+    "Negative points (-2) suggests penalty for forfeit or unsportsmanlike conduct — may be depleted"
+  ],
+  "key_weaknesses": [
+    "Worst NRR in Group B (-4.32) — most dominated side in the entire division",
+    "0 wins from 9 games — no form, no confidence, no pressure",
+    "Negative points total is extraordinary — deep structural problems with this squad"
+  ],
+  "counter_strategy": {
+    "how_to_bowl": "Keep it professional and run up a big NRR. Set a huge total — use this game to boost net run rate ahead of tougher fixtures against Pway Cubs and Giant Slayers.",
+    "matchup_recommendations": "All batters given freedom to bat aggressively from ball one. NRR target: bowl them out for under 60, chase whatever total in 8 overs or fewer."
+  }
+}

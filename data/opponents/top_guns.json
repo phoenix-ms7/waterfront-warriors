@@ -1,0 +1,23 @@
+{
+  "teamName": "Top Guns",
+  "group": "Group B",
+  "group_rank": 12,
+  "match_date": "2026-08-02",
+  "points_table": {"played": 9, "won": 4, "lost": 5, "nr": 0, "tie": 0, "points": 17, "nrr": "-1.0119", "win_pct": "44.44%"},
+  "head_to_head": {},
+  "batting": [],
+  "bowling": [],
+  "key_threats": [
+    "4 wins suggest a competent core — capable of putting up a fight on the day",
+    "Mid-season form could have improved beyond their early-season results"
+  ],
+  "key_weaknesses": [
+    "NRR of -1.01 indicates they lose heavily — batting or bowling collapses in losses",
+    "5 losses from 9 games — the majority of their season has been L-column",
+    "Ranked below WW in overall league strength"
+  ],
+  "counter_strategy": {
+    "how_to_bowl": "Apply early pressure with Pradhan and Namit Rathi to exploit their fragile batting. Their NRR suggests they can implode quickly once wickets start falling.",
+    "matchup_recommendations": "Bat first, score 100+, and shut them down in the 2nd innings. Full bowling rotation — do not underestimate them."
+  }
+}

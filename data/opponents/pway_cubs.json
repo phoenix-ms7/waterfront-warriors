@@ -1,0 +1,25 @@
+{
+  "teamName": "Pway Cubs",
+  "group": "Group B",
+  "group_rank": 1,
+  "match_date": "2026-08-16",
+  "points_table": {"played": 9, "won": 9, "lost": 0, "nr": 0, "tie": 0, "points": 44, "nrr": "+5.2798", "win_pct": "100.00%"},
+  "head_to_head": {},
+  "batting": [],
+  "bowling": [],
+  "key_threats": [
+    "UNBEATEN — 9 wins from 9 games with an extraordinary NRR of +5.28",
+    "Dominant batting: NRR +5.28 means they are winning by massive margins — deep batting lineup",
+    "Experienced pressure players — have been in winning positions all season",
+    "Top of Group B by a significant margin — likely have several match-winners"
+  ],
+  "key_weaknesses": [
+    "Overconfidence — unbeaten sides sometimes underestimate opponents",
+    "No experience of losing situations — may struggle if WW put them under pressure early",
+    "High NRR games mean they may have faced weaker opposition — quality of wins unknown"
+  ],
+  "counter_strategy": {
+    "how_to_bowl": "This is a true upset game. Bowl Ajinkya Pradhan and Yuvraj Rajpurohit in extended spells from the first ball. Aim to keep Pway Cubs under 80 — their batters will expect easy runs against weaker sides.",
+    "matchup_recommendations": "Consider fielding first if you win the toss to assess their batting. Use Namit Rathi (2.83 econ) early as a surprise containment weapon. WW will need a near-perfect team performance to win this one."
+  }
+}

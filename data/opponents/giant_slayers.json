@@ -1,0 +1,24 @@
+{
+  "teamName": "Giant Slayers",
+  "group": "Group B",
+  "group_rank": 2,
+  "match_date": "2026-08-22",
+  "points_table": {"played": 9, "won": 8, "lost": 1, "nr": 0, "tie": 0, "points": 39, "nrr": "+3.0918", "win_pct": "88.89%"},
+  "head_to_head": {},
+  "batting": [],
+  "bowling": [],
+  "key_threats": [
+    "8 wins from 9 — one of the most consistent sides in the league",
+    "NRR +3.09 indicates massive run margins in wins — powerful batting lineup",
+    "Their single loss could reveal a vulnerability, but they bounced back strongly"
+  ],
+  "key_weaknesses": [
+    "They have lost once — there is a blueprint for beating them",
+    "High NRR games might mean they play loose early expecting easy wins",
+    "Away fixture for them — WW playing at home or neutral ground is an advantage"
+  ],
+  "counter_strategy": {
+    "how_to_bowl": "Get their top-order out cheaply — Giant Slayers' NRR relies on big batting innings. Restrict them to 80 or less and WW can chase. Bowl Pradhan and Rajpurohit aggressively from over 1.",
+    "matchup_recommendations": "If you restrict them to a chaseable total (under 95), WW have the batting firepower (Keni, Singh, Shah) to win. This is a high-stakes upset opportunity."
+  }
+}

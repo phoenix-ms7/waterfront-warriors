@@ -1,0 +1,23 @@
+{
+  "teamName": "Firehawks",
+  "group": "Group B",
+  "group_rank": 14,
+  "match_date": "2026-09-12",
+  "points_table": {"played": 9, "won": 2, "lost": 6, "nr": 1, "tie": 0, "points": 11, "nrr": "-1.8781", "win_pct": "25.00%"},
+  "head_to_head": {},
+  "batting": [],
+  "bowling": [],
+  "key_threats": [
+    "2 wins suggest they have found some form — don't take them lightly in September",
+    "Playing late in the season they may be motivated to avoid finishing bottom of the table"
+  ],
+  "key_weaknesses": [
+    "NRR of -1.88 is among the worst in Group B — their losses are heavy",
+    "6 losses from 9 — consistent underperformance throughout the season",
+    "By September WW will be in good rhythm — Firehawks face a well-drilled side"
+  ],
+  "counter_strategy": {
+    "how_to_bowl": "Keep it professional — late season game, aim for a comprehensive win to boost NRR. Use this fixture to rest Pradhan for an over or two and give depth players exposure.",
+    "matchup_recommendations": "Bat big (aim for 120+) and bowl them out cheaply. This is a NRR-boosting opportunity ahead of any potential playoffs."
+  }
+}

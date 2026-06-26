@@ -1,0 +1,24 @@
+{
+  "teamName": "United Falcons",
+  "group": "Group B",
+  "group_rank": 7,
+  "match_date": "2026-08-08",
+  "points_table": {"played": 9, "won": 6, "lost": 3, "nr": 0, "tie": 0, "points": 28, "nrr": "+0.5603", "win_pct": "66.67%"},
+  "head_to_head": {},
+  "batting": [],
+  "bowling": [],
+  "key_threats": [
+    "6 wins from 9 — identical record to WW in Group C, strong all-round side",
+    "Positive NRR (+0.56) means they win by margins — disciplined batting and bowling",
+    "7th in a 19-team Group B — one of the stronger mid-table sides"
+  ],
+  "key_weaknesses": [
+    "3 losses show they can be beaten — they have gaps to exploit",
+    "Their NRR (+0.56) is slightly below WW's comparable metric, suggesting WW may have the edge",
+    "Away from their home ground — travel and unfamiliar conditions may affect performance"
+  ],
+  "counter_strategy": {
+    "how_to_bowl": "Full bowling arsenal — Pradhan, Rajpurohit, Tyagi all need to bowl their full quotas. Don't let them settle in the powerplay. United Falcons are likely to bat aggressively early.",
+    "matchup_recommendations": "Critical swing game. Win the toss and assess — both batting and chasing are viable. Protect wickets in the first 6 overs regardless."
+  }
+}

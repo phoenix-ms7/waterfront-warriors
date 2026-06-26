@@ -1,0 +1,23 @@
+{
+  "teamName": "Troy Titans",
+  "group": "Group B",
+  "group_rank": 13,
+  "match_date": "2026-06-28",
+  "points_table": {"played": 9, "won": 3, "lost": 6, "nr": 0, "tie": 0, "points": 14, "nrr": "-1.0941", "win_pct": "33.33%"},
+  "head_to_head": {},
+  "batting": [],
+  "bowling": [],
+  "key_threats": [
+    "May have improved since the start of the season — 3 wins suggest capable of competitive scores",
+    "Home side (we play at Waterfront Warriors ground) — no home advantage benefit for them"
+  ],
+  "key_weaknesses": [
+    "NRR of -1.09 reveals systemic issues — likely struggling to chase and defend totals",
+    "6 losses from 9 games indicates brittle batting or expensive bowling, or both",
+    "Lowest-ranked Group B team WW faces until Monroe Giants in July"
+  ],
+  "counter_strategy": {
+    "how_to_bowl": "Attack from ball one with Ajinkya Pradhan and Namit Rathi. Troy Titans' NRR (-1.09) shows their batting collapses under pressure. Keep them under 75 in 16 overs.",
+    "matchup_recommendations": "Win the toss, bat first, set 110+. Let Pradhan (17 wkts, 3.60 econ) and Yuvraj Rajpurohit (11 wkts) dismantle their middle order."
+  }
+}

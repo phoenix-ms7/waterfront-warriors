@@ -1,54 +1,54 @@
 {
   "last_updated": "2026-06-26",
   "next_match": {
-    "opponent": "Storm Riders",
+    "opponent": "Troy Titans",
     "date": "2026-06-28",
-    "format": "16-over Weekenders",
-    "venue": "Edison Sports Complex"
+    "format": "2026 Weekenders Cup",
+    "venue": "Waterfront Warriors Ground"
   },
-  "match_approach": "Storm Riders are the league leaders with the strongest NRR (+0.842) in Group C. They rely on a fast start in their powerplay — containment in overs 1–4 is critical. Our batting depth gives us flexibility; play conservatively through overs 1–6 to keep wickets in hand, then accelerate hard from overs 10–16. Target 100+ which should be enough against their middle-order inconsistency.",
+  "match_approach": "Troy Titans sit 13th in Group B with 3 wins and 6 losses from 9 games (NRR -1.09). Their negative NRR signals both batting and bowling struggles. This is a must-win fixture for WW. Bat first if you win the toss — set a target of 110+ and let Ajinkya Pradhan and Yuvraj Rajpurohit defend it. Contain their top-order early and the game should be won by the 12th over.",
   "batting_order": [
-    {"position": 1, "name": "Vinit Keni", "role": "Opener", "reason": "Best average in the squad (35.50). Reads the game well and builds the platform early."},
-    {"position": 2, "name": "Suresh Nair", "role": "Opener", "reason": "Highest strike rate among batters with 4+ innings (94.44). Provides explosive starts alongside Vinit."},
-    {"position": 3, "name": "Malav Shah", "role": "No. 3", "reason": "Consistent 24.50 average. Anchors the innings if an early wicket falls, strong against pace."},
-    {"position": 4, "name": "Rohan Mehta", "role": "No. 4", "reason": "Solid accumulator (82.86 SR). Good against spin in the middle overs — expected from Storm Riders' rotation."},
-    {"position": 5, "name": "Karan Patel", "role": "No. 5", "reason": "Powerful striker. Takes the game on from over 10 onwards. Can hit through the line effectively."},
-    {"position": 6, "name": "Pratik Joshi", "role": "Finisher", "reason": "108.33 SR with a low-pressure batting role. Ideal to accelerate in overs 13–16 with freedom to swing."},
-    {"position": 7, "name": "Ajinkya Pradhan", "role": "All-rounder", "reason": "110.71 SR with the bat. Contributes quick lower-order runs and is the key bowling asset — protect his energy."},
-    {"position": 8, "name": "Amit Kumar", "role": "Lower order", "reason": "115.79 SR — can strike cleanly if overs remain. Keep him for late acceleration."},
-    {"position": 9, "name": "Rahul Sharma", "role": "Tail", "reason": "Useful 107.14 SR in limited innings. Fills in for quick death-over runs."},
-    {"position": 10, "name": "Dev Patel", "role": "Tail", "reason": "Primary bowler — batting is secondary. Protect for bowling workload."},
-    {"position": 11, "name": "Nikhil Desai", "role": "Tail", "reason": "Specialist bowler. Bat aggressively if at the crease — nothing to lose."}
+    {"position": 1, "name": "Vinit Keni",      "role": "Opener",       "reason": "Team's leading run-scorer (174 runs, 34.80 avg). Reads pace well and builds the platform in the powerplay."},
+    {"position": 2, "name": "Vivek Singh",     "role": "Opener",       "reason": "Captain with an explosive 129.58 SR. Gets the innings moving quickly alongside Vinit."},
+    {"position": 3, "name": "Vedant Kumar",    "role": "No. 3",        "reason": "Most experienced batter by matches (9 games, 97 runs). Steadies the innings if an early wicket falls."},
+    {"position": 4, "name": "Malav Shah",      "role": "No. 4",        "reason": "Highest SR in the top 7 (146.67). Accelerates from over 6 onwards and punishes any width."},
+    {"position": 5, "name": "Yogen Phanse",    "role": "No. 5",        "reason": "Solid 105.36 SR with 59 runs this season. Provides the middle-overs push."},
+    {"position": 6, "name": "Ajinkya Pradhan", "role": "All-rounder",  "reason": "Vice Captain. 80 runs with the bat and our leading wicket-taker. Manages his energy here — bat smartly, bowl full quota."},
+    {"position": 7, "name": "Anurag Dabee",    "role": "No. 7",        "reason": "52 runs across 8 matches. Reliable lower-order anchor."},
+    {"position": 8, "name": "Siddhant Kumar",  "role": "No. 8",        "reason": "Chips in with 28 runs and 6 wickets. Useful dual-role late in the innings."},
+    {"position": 9, "name": "Tejas Bawaskar",  "role": "No. 9",        "reason": "40 runs in 4 games — capable of a quick cameo at the end."},
+    {"position": 10,"name": "Yuvraj Rajpurohit","role": "No. 10",      "reason": "Key bowler (11 wickets). Bats late to preserve energy for bowling duties."},
+    {"position": 11,"name": "Abhinav Tyagi",   "role": "Tail",         "reason": "Pure bowling asset (7 wickets). Bat aggressively if wickets in hand — nothing to lose."}
   ],
   "bowling_rotation": {
     "powerplay": {
       "overs": "1–4",
       "bowlers": [
-        {"name": "Ajinkya Pradhan", "overs": "2 overs", "reason": "Best economy (4.23). Opens with him to restrict the Storm Riders' aggressive openers."},
-        {"name": "Dev Patel", "overs": "2 overs", "reason": "4.23 avg economy in powerplay situations. Hits the good length consistently."}
+        {"name": "Ajinkya Pradhan",  "overs": "2 overs", "reason": "Best economy in the squad (3.60 across 34 overs). Opens with him to set the tone and dry up runs early."},
+        {"name": "Namit Rathi",      "overs": "2 overs", "reason": "Team's best economy figure (2.83). Extremely tight in the powerplay — generates dot-ball pressure."}
       ]
     },
     "middle": {
       "overs": "5–12",
       "bowlers": [
-        {"name": "Pratik Joshi", "overs": "3 overs", "reason": "Variation and change of pace disrupts middle-order rhythm."},
-        {"name": "Rahul Sharma", "overs": "3 overs", "reason": "Consistent line — dot-ball pressure with 41 dots in 5 games."},
-        {"name": "Rohan Mehta", "overs": "2 overs", "reason": "Part-time option to rotate ends and rest main bowlers."}
+        {"name": "Malav Shah",         "overs": "3 overs", "reason": "4.05 economy over 20 overs. Reliable containment option through the middle."},
+        {"name": "Yuvraj Rajpurohit",  "overs": "3 overs", "reason": "4.53 economy and 11 wickets. Dangerous through the middle — will create pressure."},
+        {"name": "Siddhant Kumar",     "overs": "2 overs", "reason": "6 wickets at 6.73 econ. Variation bowler — useful to break partnerships."}
       ]
     },
     "death": {
       "overs": "13–16",
       "bowlers": [
-        {"name": "Ajinkya Pradhan", "overs": "2 overs (remaining)", "reason": "Best equipped to defend under pressure. Use at the death for his slower ball."},
-        {"name": "Karan Patel", "overs": "1 over", "reason": "Trusted death bowler. Keep yorker-length discipline."},
-        {"name": "Amit Kumar", "overs": "1 over", "reason": "Pace option at the death — can surprise with raw speed."}
+        {"name": "Ajinkya Pradhan",  "overs": "2 overs (remaining)", "reason": "Non-negotiable at the death. His slower ball and yorker make him our best death bowler by a distance."},
+        {"name": "Yuvraj Rajpurohit","overs": "2 overs (remaining)", "reason": "11 wickets this season. Backs up Pradhan at death and handles pressure situations well."},
+        {"name": "Abhinav Tyagi",    "overs": "1 over",              "reason": "Raw pace (7 wickets) as a wildcard at the death if needed."}
       ]
     }
   },
   "key_matchups": [
-    "Deploy Ajinkya Pradhan in the powerplay — his 4.23 economy is the best in the squad and sets the tone against Storm Riders' aggressive openers.",
-    "Storm Riders' No. 3 batter has a weakness against balls angled into the body — Pratik Joshi's natural action creates this angle. Target him with Pratik in overs 6–8.",
-    "Vinit Keni vs. Storm Riders' left-arm spinner: Vinit has struggled historically with spin from the left-arm angle. Consider promoting Suresh Nair to face that bowler instead.",
-    "Use Rohan Mehta as the 'control' bowler in the middle — his 2 overs absorb pressure and give Pradhan rest before the death."
+    "Ajinkya Pradhan must bowl his full 4-over quota — 17 wickets at 3.60 economy is match-winning quality against a struggling Troy Titans batting lineup.",
+    "Open the batting with Vinit Keni and Vivek Singh to put pressure on Troy Titans' bowlers early. A 50-run powerplay would set up an imposing total.",
+    "Namit Rathi in the powerplay is the surprise card — his 2.83 economy will frustrate any aggressive opener Troy Titans field.",
+    "Malav Shah bats at No. 4 with licence to swing from ball one. His 146.67 SR is the highest in WW's top 7 and should accelerate the innings from over 8 onwards."
   ]
 }

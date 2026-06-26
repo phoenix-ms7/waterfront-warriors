@@ -1,0 +1,24 @@
+{
+  "teamName": "Sinclair Lions",
+  "group": "Group B",
+  "group_rank": 9,
+  "match_date": "2026-07-19",
+  "points_table": {"played": 9, "won": 5, "lost": 4, "nr": 0, "tie": 0, "points": 24, "nrr": "+0.4810", "win_pct": "55.56%"},
+  "head_to_head": {},
+  "batting": [],
+  "bowling": [],
+  "key_threats": [
+    "5 wins from 9 — mid-table but capable of beating strong sides",
+    "Positive NRR (+0.48) suggests they both score well and defend effectively",
+    "9th in a strong Group B — not to be underestimated"
+  ],
+  "key_weaknesses": [
+    "4 losses indicate they have exploitable patterns",
+    "Win percentage of 55.56% makes them a swing game — winnable with discipline",
+    "Their NRR is lower than WW's Group C NRR (+0.68 vs +0.48) suggesting WW are the stronger side"
+  ],
+  "counter_strategy": {
+    "how_to_bowl": "Use Yuvraj Rajpurohit early to unsettle their top order. Sinclair Lions' NRR suggests they haven't dominated matches — pressure them from ball one.",
+    "matchup_recommendations": "Full bowling attack needed. Don't rest key bowlers here — treat it like a must-win."
+  }
+}

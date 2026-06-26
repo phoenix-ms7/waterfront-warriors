@@ -1,11 +1,13 @@
 [
-  {"teamId": "3821", "teamName": "Storm Riders",       "file": "storm_riders.json"},
-  {"teamId": "3654", "teamName": "Thunder Hawks",      "file": "thunder_hawks.json"},
-  {"teamId": "3712", "teamName": "Express Rangers",    "file": "express_rangers.json"},
-  {"teamId": "3756", "teamName": "Bay Area Blasters",  "file": "bay_area_blasters.json"},
-  {"teamId": "3788", "teamName": "Speed Demons",       "file": "speed_demons.json"},
-  {"teamId": "3801", "teamName": "Coastal Kings",      "file": "coastal_kings.json"},
-  {"teamId": "3834", "teamName": "City Challengers",   "file": "city_challengers.json"},
-  {"teamId": "3812", "teamName": "Monsoon Men",        "file": "monsoon_men.json"},
-  {"teamId": "3867", "teamName": "The Sixes",          "file": "the_sixes.json"}
+  {"teamName": "Troy Titans",        "file": "troy_titans.json",        "group_rank": 13, "match_date": "2026-06-28"},
+  {"teamName": "Jersey Aces",        "file": "jersey_aces.json",        "group_rank": 18, "match_date": "2026-07-11"},
+  {"teamName": "Sinclair Lions",     "file": "sinclair_lions.json",     "group_rank": 9,  "match_date": "2026-07-19"},
+  {"teamName": "Monroe Giants Club", "file": "monroe_giants.json",      "group_rank": 19, "match_date": "2026-07-25"},
+  {"teamName": "Top Guns",           "file": "top_guns.json",           "group_rank": 12, "match_date": "2026-08-02"},
+  {"teamName": "United Falcons",     "file": "united_falcons.json",     "group_rank": 7,  "match_date": "2026-08-08"},
+  {"teamName": "Pway Cubs",          "file": "pway_cubs.json",          "group_rank": 1,  "match_date": "2026-08-16"},
+  {"teamName": "Giant Slayers",      "file": "giant_slayers.json",      "group_rank": 2,  "match_date": "2026-08-22"},
+  {"teamName": "NJ Marvels",         "file": "nj_marvels.json",         "group_rank": 4,  "match_date": "2026-08-30"},
+  {"teamName": "Firehawks",          "file": "firehawks.json",          "group_rank": 14, "match_date": "2026-09-12"},
+  {"teamName": "EB Strikers",        "file": "eb_strikers.json",        "group_rank": 11, "match_date": "2026-09-20"}
 ]
