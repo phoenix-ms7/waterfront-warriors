@@ -88,6 +88,7 @@
     .strategy-banner .s-meta { font-size: 0.7rem; color: var(--green-light); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.35rem; }
     .strategy-banner h2 { font-family: 'Bebas Neue', sans-serif; font-size: 1.7rem; color: var(--gold); letter-spacing: 0.05em; margin-bottom: 0.65rem; }
     .strategy-banner .s-approach { font-size: 0.87rem; color: rgba(255,255,255,0.85); line-height: 1.65; }
+    .strategy-banner .form-note { font-size: 0.78rem; color: rgba(200,168,75,0.85); margin-top: 0.65rem; line-height: 1.55; }
 
     .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; margin-bottom: 1.5rem; }
     @media (max-width: 600px) { .two-col { grid-template-columns: 1fr; } }
@@ -99,6 +100,7 @@
     .bat-info .bat-player { font-weight: 600; font-size: 0.83rem; }
     .bat-info .bat-role { font-size: 0.65rem; color: var(--gold); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
     .bat-info .bat-reason { font-size: 0.76rem; color: var(--text-muted); margin-top: 0.15rem; line-height: 1.45; }
+    .bat-info .bat-form { font-size: 0.68rem; color: var(--gold); margin-top: 0.2rem; font-style: italic; line-height: 1.35; }
 
     .bowling-phases { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1.5rem; }
     @media (max-width: 600px) { .bowling-phases { grid-template-columns: 1fr; } }
@@ -111,6 +113,7 @@
     .phase-bowl-list li:last-child { border-bottom: none; }
     .pbowler { font-weight: 600; }
     .pbowler-overs { font-size: 0.7rem; color: var(--gold); font-weight: 600; }
+    .pbowler-data { font-size: 0.66rem; color: var(--gold); margin-top: 0.08rem; font-style: italic; }
     .pbowler-reason { font-size: 0.72rem; color: var(--text-muted); margin-top: 0.1rem; line-height: 1.4; }
 
     .matchup-list { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
@@ -161,6 +164,7 @@
     .res-nr { background: #f0f0f0; color: #666; }
     .media-title { font-weight: 600; font-size: 0.87rem; margin-bottom: 0.2rem; }
     .media-score { font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.15rem; }
+    .media-margin { font-size: 0.7rem; color: var(--gold); font-weight: 600; margin-bottom: 0.1rem; }
     .media-date { font-size: 0.72rem; color: var(--text-muted); }
 
     /* ── EMPTY STATE ── */
@@ -479,34 +483,38 @@ function renderStrategy() {
       <div class="bat-info">
         <div class="bat-player">${p.name} <span class="bat-role">${p.role}</span></div>
         <div class="bat-reason">${p.reason}</div>
+        ${p.scorecard_form ? `<div class="bat-form">Form: ${p.scorecard_form}</div>` : ''}
       </div>
     </li>`).join('');
 
   const br = d.bowling_rotation || {};
   const phases = [
-    { key:'powerplay', label:'Powerplay', overs: br.powerplay?.overs, bowlers: br.powerplay?.bowlers || [] },
+    { key:'powerplay', label:'PowerPlay (4 overs — captain\'s choice, overs 1–8)', overs: br.powerplay?.overs, bowlers: br.powerplay?.bowlers || [] },
     { key:'middle',    label:'Middle Overs', overs: br.middle?.overs,    bowlers: br.middle?.bowlers    || [] },
     { key:'death',     label:'Death Overs',  overs: br.death?.overs,     bowlers: br.death?.bowlers     || [], cls:'death' },
   ];
   const phaseHtml = phases.map(ph => `
     <div class="phase-card ${ph.cls || ''}">
       <div class="phase-lbl">${ph.label}</div>
-      <div class="phase-overs">Overs ${ph.overs || ''}</div>
+      <div class="phase-overs">${ph.overs || ''}</div>
       <ul class="phase-bowl-list">
         ${ph.bowlers.map(b => `<li>
-          <div class="pbowler">${b.name} <span class="pbowler-overs">${b.overs}</span></div>
+          <div class="pbowler">${b.name} <span class="pbowler-overs">${b.overs || ''}</span></div>
+          ${b.match_data ? `<div class="pbowler-data">${b.match_data}</div>` : ''}
           <div class="pbowler-reason">${b.reason}</div>
         </li>`).join('')}
       </ul>
     </div>`).join('');
 
   const matchups = (d.key_matchups || []).map(m => `<li class="matchup-item">${m}</li>`).join('');
+  const formNote = d.form_notes ? `<div class="form-note">${d.form_notes}</div>` : '';
 
   document.getElementById('strategyContent').innerHTML = `
     <div class="strategy-banner">
       <div class="s-meta">${nm.format} &nbsp;·&nbsp; ${nm.venue || ''} &nbsp;·&nbsp; ${nm.date}</div>
       <h2>vs ${nm.opponent}</h2>
       <div class="s-approach">${d.match_approach}</div>
+      ${formNote}
     </div>
     <div class="two-col">
       <div class="card">
@@ -685,6 +693,7 @@ function renderMedia() {
           <span class="res-badge ${resCls}">${resLabel}</span>
           <div class="media-title">vs ${m.opponent}</div>
           <div class="media-score">WW ${m.warriorsScore} — ${m.opponent} ${m.opponentScore}</div>
+          ${m.margin ? `<div class="media-margin">${m.margin}</div>` : ''}
           <div class="media-date">${m.season} · ${m.date}</div>
         </div>
       </div>`;

@@ -1,54 +1,184 @@
 {
   "last_updated": "2026-06-26",
+  "data_source": "9 completed match scorecards (04/18–06/20/2026) + season aggregate stats",
   "next_match": {
     "opponent": "Troy Titans",
     "date": "2026-06-28",
     "format": "2026 Weekenders Cup",
-    "venue": "Waterfront Warriors Ground"
+    "venue": "TBD"
   },
-  "match_approach": "Troy Titans sit 13th in Group B with 3 wins and 6 losses from 9 games (NRR -1.09). Their negative NRR signals both batting and bowling struggles. This is a must-win fixture for WW. Bat first if you win the toss — set a target of 110+ and let Ajinkya Pradhan and Yuvraj Rajpurohit defend it. Contain their top-order early and the game should be won by the 12th over.",
+  "match_approach": "Troy Titans sit 13th in Group B (3W/6L, NRR −1.09) — a must-win for WW. Our last four games produced 92, 122, 122, and 111 runs batting first; Troy's poor NRR suggests their bowling leaks runs. Win the toss and bat. Set 110+, then unleash Ajinkya Pradhan and Yuvraj Rajpurohit to exploit their brittle batting lineup.",
+  "form_notes": "WW have won 4 consecutive matches (Princeton Walk, Plainsboro Hunters, MKCC Weekenders, PRO SQUAD). Vinit Keni is in brilliant form (45 and 55* in last two innings). Vivek Singh's role has shifted — he is most dangerous when batting 6–7, not at the top.",
+
   "batting_order": [
-    {"position": 1, "name": "Vinit Keni",      "role": "Opener",       "reason": "Team's leading run-scorer (174 runs, 34.80 avg). Reads pace well and builds the platform in the powerplay."},
-    {"position": 2, "name": "Vivek Singh",     "role": "Opener",       "reason": "Captain with an explosive 129.58 SR. Gets the innings moving quickly alongside Vinit."},
-    {"position": 3, "name": "Vedant Kumar",    "role": "No. 3",        "reason": "Most experienced batter by matches (9 games, 97 runs). Steadies the innings if an early wicket falls."},
-    {"position": 4, "name": "Malav Shah",      "role": "No. 4",        "reason": "Highest SR in the top 7 (146.67). Accelerates from over 6 onwards and punishes any width."},
-    {"position": 5, "name": "Yogen Phanse",    "role": "No. 5",        "reason": "Solid 105.36 SR with 59 runs this season. Provides the middle-overs push."},
-    {"position": 6, "name": "Ajinkya Pradhan", "role": "All-rounder",  "reason": "Vice Captain. 80 runs with the bat and our leading wicket-taker. Manages his energy here — bat smartly, bowl full quota."},
-    {"position": 7, "name": "Anurag Dabee",    "role": "No. 7",        "reason": "52 runs across 8 matches. Reliable lower-order anchor."},
-    {"position": 8, "name": "Siddhant Kumar",  "role": "No. 8",        "reason": "Chips in with 28 runs and 6 wickets. Useful dual-role late in the innings."},
-    {"position": 9, "name": "Tejas Bawaskar",  "role": "No. 9",        "reason": "40 runs in 4 games — capable of a quick cameo at the end."},
-    {"position": 10,"name": "Yuvraj Rajpurohit","role": "No. 10",      "reason": "Key bowler (11 wickets). Bats late to preserve energy for bowling duties."},
-    {"position": 11,"name": "Abhinav Tyagi",   "role": "Tail",         "reason": "Pure bowling asset (7 wickets). Bat aggressively if wickets in hand — nothing to lose."}
+    {
+      "position": 1,
+      "name": "Vedant Kumar",
+      "role": "Opener",
+      "scorecard_form": "22(18), 13(26), 21(18), 0(6), 27(25), 5(8), 2(4), 7(13) — consistent opener across all 9 games",
+      "reason": "The permanent opener. Has three 20+ scores (22, 21, 27) and provides the early platform. His 116+ SR in those big innings shows he can attack when needed."
+    },
+    {
+      "position": 2,
+      "name": "Yogen Phanse",
+      "role": "Aggressive #2",
+      "scorecard_form": "20(13) SR=154, 2(3), 1(7), 8(10), 9(11), 19(12) SR=158",
+      "reason": "Opens or bats #2 depending on lineup. His explosive SR (154–158 in his best outings) creates quick momentum. Also bowls containment in middle overs. Keep him early so his big-hitting phase overlaps with the powerplay."
+    },
+    {
+      "position": 3,
+      "name": "Vinit Keni",
+      "role": "Anchor / Top Order",
+      "scorecard_form": "24(27), 6(11)*, 29*(39), 0(3), 15(11), 45(31), 55*(41) — back-to-back match-defining innings",
+      "reason": "The cornerstone. When Keni stays in, WW win. His last two innings — 45 and 55* — anchored totals of 122 and 111. He is NOT slow: SR of 145 and 134 in those games. Protect him at #3 and build the innings around him."
+    },
+    {
+      "position": 4,
+      "name": "Ajinkya Pradhan",
+      "role": "All-rounder / #4",
+      "scorecard_form": "3, 6, 5, 3, 20(19) Retired Hurt, 12(15), 2, 14(16), 15(17)",
+      "reason": "Vice-captain and #1 bowler. Bats 4–6 depending on game state. His retired-hurt 20 vs Express Rangers and 15 vs PRO SQUAD show he can build a platform. Bats here to conserve energy for full bowling quota."
+    },
+    {
+      "position": 5,
+      "name": "Anurag Dabee",
+      "role": "#5 Middle Order",
+      "scorecard_form": "12(13), 1(3), 1(4), 8(5), 9(10), 1(5), 1(3), 19*(23)",
+      "reason": "Steady contributor who finishes games (19* not out in the PRO SQUAD win). Good running between wickets, steady under pressure."
+    },
+    {
+      "position": 6,
+      "name": "Vivek Singh",
+      "role": "Captain / Floater — bats 6 OR 7",
+      "scorecard_form": "EARLY ORDER FAILURES: pos3–4 scores = 5,0,5,0,0,1 (6 innings). MOVED DOWN: pos6–7 scores = 11*(14), 52*(27), 18(14) — 3 innings, 81 runs",
+      "reason": "CRITICAL INSIGHT FROM SCORECARDS: Vivek consistently fails when batting top 4 (5,0,5,0,0,1 across 6 innings). He is MATCH-WINNING at positions 6–7, including a match-saving 52* off 27 balls (5 sixes, SR=192!) vs Plainsboro Hunters. He must be held back. Float him to 5 only if WW are 50+ in 8 overs and wickets are intact."
+    },
+    {
+      "position": 7,
+      "name": "Malav Shah",
+      "role": "Power Finisher",
+      "scorecard_form": "29(15) 4×6 SR=193 vs JC Warriors; 4*(1); 0(4); 10*(6) SR=167 vs Plainsboro; 1(4); DNB vs PRO SQUAD",
+      "reason": "The sixer machine. When he gets any kind of delivery in the final 6 overs, he hits it out of the park — 4 sixes in 15 balls against JC Warriors. Move him UP to #7 (currently bats 8–9 and often doesn't face enough balls). His explosive SR (146.67 aggregate, 193 peak) is wasted at #9."
+    },
+    {
+      "position": 8,
+      "name": "Siddhant Kumar",
+      "role": "#8",
+      "scorecard_form": "0(1), 2(4), 9(11), 0(4), 3(7), 14*(9) SR=155 vs MKCC",
+      "reason": "Useful lower-order bat who can hit — 14* off 9 with 2 sixes vs MKCC. Bats 8 and bowls in middle overs."
+    },
+    {
+      "position": 9,
+      "name": "Santhosh Suresh Kumar",
+      "role": "#9",
+      "scorecard_form": "12(11), 1*(1), 1(2)",
+      "reason": "Can contribute useful late-innings runs. Bowls useful overs (2-1 vs PRO SQUAD for 5 runs)."
+    },
+    {
+      "position": 10,
+      "name": "Yuvraj Rajpurohit",
+      "role": "#10 / Key Bowler",
+      "scorecard_form": "1(1), 1(1)",
+      "reason": "Key bowling asset — bats low to preserve full energy for 4-over bowling allocation."
+    },
+    {
+      "position": 11,
+      "name": "Abhinav Tyagi",
+      "role": "Tail / Pace Bowler",
+      "scorecard_form": "3*(2), 2(6), 0(1), 0*(0), 0*(0)",
+      "reason": "Pure bowling asset. Bats tail with licence to swing hard."
+    }
   ],
+
   "bowling_rotation": {
+    "powerplay_note": "PowerPlay = 4 overs. Captain can take it ANYTIME between overs 1–8 — this is a strategic weapon, not a fixed block. Best used when opposition's best batsmen are in to force errors under fielding restrictions.",
     "powerplay": {
-      "overs": "1–4",
+      "overs": "Captain's choice — 4 overs within overs 1–8",
       "bowlers": [
-        {"name": "Ajinkya Pradhan",  "overs": "2 overs", "reason": "Best economy in the squad (3.60 across 34 overs). Opens with him to set the tone and dry up runs early."},
-        {"name": "Namit Rathi",      "overs": "2 overs", "reason": "Team's best economy figure (2.83). Extremely tight in the powerplay — generates dot-ball pressure."}
-      ]
+        {
+          "name": "Ajinkya Pradhan",
+          "overs": "2 overs",
+          "match_data": "Econ: 5.37, 1.00, 4.50, 1.50, 2.33, 3.00, 4.25 across 7 outings",
+          "reason": "WW's best bowler by distance. Economy under 4.0 in 5 of 7 appearances. His 1.00 econ vs Em Sports (4-1-4-1) and 1.50 vs Princeton Walk (4-1-6-2) are elite performances. Opens the attack."
+        },
+        {
+          "name": "Namit Rathi",
+          "overs": "2 overs",
+          "match_data": "Econ 2.83 season avg; 1.00 econ vs Princeton Walk (3-1-3-2 — 2 wickets for 3 runs!)",
+          "reason": "The surprise PowerPlay weapon. When available, Rathi generates dot-ball pressure that sets up the rest of the innings. His match vs Princeton Walk (3 overs, 3 runs, 2 wickets) was extraordinary. Use him whenever he is playing."
+        }
+      ],
+      "alternative": "If Namit Rathi is not playing, use Malav Shah for the 2nd PowerPlay over (4.00 economy, tight lines)."
     },
     "middle": {
-      "overs": "5–12",
+      "overs": "Overs roughly 5–12 (adjusted for PowerPlay timing)",
       "bowlers": [
-        {"name": "Malav Shah",         "overs": "3 overs", "reason": "4.05 economy over 20 overs. Reliable containment option through the middle."},
-        {"name": "Yuvraj Rajpurohit",  "overs": "3 overs", "reason": "4.53 economy and 11 wickets. Dangerous through the middle — will create pressure."},
-        {"name": "Siddhant Kumar",     "overs": "2 overs", "reason": "6 wickets at 6.73 econ. Variation bowler — useful to break partnerships."}
+        {
+          "name": "Malav Shah",
+          "overs": "4 overs across middle phase",
+          "match_data": "Econ: 4.00, 3.75, 3.67, 4.25 across last 4 full outings",
+          "reason": "The containment workhorse. Economy between 3.67–4.25 across 16 overs in the last four games. He concedes runs at under run-a-ball through the middle phase — exactly what's needed. His wickets are a bonus; his VALUE is the pressure he builds through dot balls."
+        },
+        {
+          "name": "Yuvraj Rajpurohit",
+          "overs": "3–4 overs",
+          "match_data": "4-1-9-3 (econ 2.25!) vs MKCC; 4-0-24-2 (econ 6.00) vs PRO SQUAD",
+          "reason": "Dangerous and match-winning when on — his 4-over spell vs MKCC (3 wickets for 9 runs!) was the difference. Variable economy means captain should watch for expensive starts and rotate him if losing it. Excellent death-over option when he has rhythm."
+        },
+        {
+          "name": "Siddhant Kumar",
+          "overs": "2 overs max",
+          "match_data": "Econ variable: 11.50, 5.25, 17.00, 6.25, 2.67 — highly inconsistent",
+          "reason": "Partnership-breaker but USE WITH CAUTION. When good (2.67 vs MKCC, 5.25 vs Em Sports) he adds value. When off (17.00 vs JC Warriors, 11.50 vs Sreeshti) he's a liability. Cap at 2 overs; pull him immediately if expensive."
+        }
       ]
     },
     "death": {
-      "overs": "13–16",
+      "overs": "Overs 13–16",
       "bowlers": [
-        {"name": "Ajinkya Pradhan",  "overs": "2 overs (remaining)", "reason": "Non-negotiable at the death. His slower ball and yorker make him our best death bowler by a distance."},
-        {"name": "Yuvraj Rajpurohit","overs": "2 overs (remaining)", "reason": "11 wickets this season. Backs up Pradhan at death and handles pressure situations well."},
-        {"name": "Abhinav Tyagi",    "overs": "1 over",              "reason": "Raw pace (7 wickets) as a wildcard at the death if needed."}
+        {
+          "name": "Ajinkya Pradhan",
+          "overs": "2 remaining overs",
+          "reason": "Non-negotiable at the death. His slower ball and variation make him the hardest to score off in the last 2 overs. ALWAYS save his remaining allocation for 13–16."
+        },
+        {
+          "name": "Yuvraj Rajpurohit",
+          "overs": "2 remaining overs",
+          "reason": "Death specialist when his rhythm is right. The MKCC game proved his quality. Pair him with Pradhan for a two-pronged death attack."
+        },
+        {
+          "name": "Abhinav Tyagi",
+          "overs": "1 over wildcard",
+          "match_data": "3 wkts vs Sreeshti; takes wickets but expensive (6.50 avg econ)",
+          "reason": "Raw pace can surprise at the death if fielding are set. Use as a 1-over option if the partnership needs breaking and both Pradhan/Yuvraj overs are done."
+        }
+      ]
+    },
+    "economy_first_bowlers": {
+      "note": "These bowlers may not always top the wickets column but build pressure through dot balls that lead to wickets for others.",
+      "bowlers": [
+        {"name": "Ajinkya Pradhan", "season_econ": "3.60", "wickets": 17, "note": "Economy AND wickets — the complete package"},
+        {"name": "Namit Rathi",     "season_econ": "2.83", "wickets": 4,  "note": "Best economy in the squad — forces batsmen into errors"},
+        {"name": "Malav Shah",      "season_econ": "4.05", "wickets": 4,  "note": "Concedes under run-a-ball — crucial containment role"},
+        {"name": "Yuvraj Rajpurohit","season_econ":"4.53", "wickets": 11, "note": "High wickets AND good economy — use his full quota"}
       ]
     }
   },
+
   "key_matchups": [
-    "Ajinkya Pradhan must bowl his full 4-over quota — 17 wickets at 3.60 economy is match-winning quality against a struggling Troy Titans batting lineup.",
-    "Open the batting with Vinit Keni and Vivek Singh to put pressure on Troy Titans' bowlers early. A 50-run powerplay would set up an imposing total.",
-    "Namit Rathi in the powerplay is the surprise card — his 2.83 economy will frustrate any aggressive opener Troy Titans field.",
-    "Malav Shah bats at No. 4 with licence to swing from ball one. His 146.67 SR is the highest in WW's top 7 and should accelerate the innings from over 8 onwards."
-  ]
+    "Ajinkya Pradhan bowls his FULL 4-over quota — 17 wickets at 3.60 economy is the bedrock of WW's bowling. Never split his overs unevenly.",
+    "Vivek Singh MUST bat 6 or 7 — his top-order record (5,0,5,0,0,1 in 6 innings at pos 3–4) versus his lower-order record (11*, 52*, 18 in 3 innings at pos 6–7) is night and day. His 52* off 27 balls vs Plainsboro won that game.",
+    "Vinit Keni is the batting backbone — his 45 and 55* in the last two games prove he is in the best form of the season. Build the innings around him.",
+    "Malav Shah belongs at #7 — 29(15) with 4 sixes, 10*(6) — he is wasted coming in at #9 with 1 ball left.",
+    "Take the PowerPlay at overs 5–8 if Troy Titans' openers are set and threatening — use Pradhan + Rathi under restrictions to force false shots."
+  ],
+
+  "scorecard_insights": {
+    "vivek_singh_pattern": "Positions 3–4: 5,0,5,0,0,1 = 11 runs in 6 innings. Positions 6–7: 11*,52*,18 = 81 runs in 3 innings. Data is conclusive.",
+    "vinit_keni_anchor": "When Keni bats 20+ balls, WW wins. His departure triggers collapses (see M4 Monroe 21 all out). Protect him at #3.",
+    "pradhan_economy_peaks": "Vs Em Sports: 4-1-4-1 (econ 1.00). Vs Princeton Walk: 4-1-6-2 (econ 1.50). Vs Plainsboro: 3-0-7-3 (econ 2.33). World-class bowling.",
+    "rathi_powerplay_weapon": "Vs Princeton Walk: 3-1-3-2 (econ 1.00 with 2 wickets). Rathi in the PowerPlay is a game-changer — use him every match he plays.",
+    "malav_shah_containment": "Last 4 bowling outings: 4.00, 3.75, 3.67, 4.25 econ — the most consistent containment bowler in the squad after Pradhan.",
+    "collapse_warning": "M4 vs Monroe: WW collapsed to 21 all out in 9.1 overs. All batsmen dismissed for 0–6. This shows WW's tail is fragile — protect Keni and Vivek's big-innings partnership."
+  }
 }

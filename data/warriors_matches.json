@@ -1,16 +1,92 @@
 [
-  {"matchId":"20261","season":"2026","date":"2026-04-12","opponent":"Express Rangers","result":"W","warriorsScore":"97/5","opponentScore":"96/8","playerOfMatch":"Ajinkya Pradhan","youtubeUrl":""},
-  {"matchId":"20262","season":"2026","date":"2026-04-19","opponent":"Storm Riders","result":"L","warriorsScore":"78/7","opponentScore":"80/3","playerOfMatch":"","youtubeUrl":""},
-  {"matchId":"20263","season":"2026","date":"2026-05-03","opponent":"Bay Area Blasters","result":"W","warriorsScore":"105/4","opponentScore":"89/6","playerOfMatch":"Vinit Keni","youtubeUrl":""},
-  {"matchId":"20264","season":"2026","date":"2026-05-10","opponent":"Thunder Hawks","result":"W","warriorsScore":"91/6","opponentScore":"88/7","playerOfMatch":"Pratik Joshi","youtubeUrl":""},
-  {"matchId":"20265","season":"2026","date":"2026-05-24","opponent":"Speed Demons","result":"W","warriorsScore":"112/3","opponentScore":"98/8","playerOfMatch":"Malav Shah","youtubeUrl":""},
-
-  {"matchId":"20251","season":"2025","date":"2025-05-04","opponent":"Storm Riders","result":"L","warriorsScore":"88/8","opponentScore":"91/5","playerOfMatch":"","youtubeUrl":""},
-  {"matchId":"20252","season":"2025","date":"2025-05-11","opponent":"Coastal Kings","result":"W","warriorsScore":"118/4","opponentScore":"102/7","playerOfMatch":"Vinit Keni","youtubeUrl":""},
-  {"matchId":"20253","season":"2025","date":"2025-05-18","opponent":"City Challengers","result":"W","warriorsScore":"94/6","opponentScore":"87/9","playerOfMatch":"Ajinkya Pradhan","youtubeUrl":""},
-  {"matchId":"20254","season":"2025","date":"2025-06-01","opponent":"Thunder Hawks","result":"W","warriorsScore":"109/5","opponentScore":"97/7","playerOfMatch":"Rohan Mehta","youtubeUrl":""},
-  {"matchId":"20255","season":"2025","date":"2025-06-08","opponent":"Bay Area Blasters","result":"L","warriorsScore":"76/9","opponentScore":"78/4","playerOfMatch":"","youtubeUrl":""},
-  {"matchId":"20256","season":"2025","date":"2025-06-15","opponent":"Monsoon Men","result":"W","warriorsScore":"132/3","opponentScore":"98/8","playerOfMatch":"Malav Shah","youtubeUrl":""},
-  {"matchId":"20257","season":"2025","date":"2025-06-22","opponent":"Express Rangers","result":"W","warriorsScore":"101/5","opponentScore":"99/6","playerOfMatch":"Ajinkya Pradhan","youtubeUrl":""},
-  {"matchId":"20258","season":"2025","date":"2025-07-06","opponent":"The Sixes","result":"W","warriorsScore":"115/4","opponentScore":"88/8","playerOfMatch":"Karan Patel","youtubeUrl":""}
+  {
+    "date": "2026-06-20",
+    "opponent": "PRO SQUAD",
+    "result": "W",
+    "warriorsScore": "111/3 (16 Ov)",
+    "opponentScore": "86/6 (16 Ov)",
+    "season": "2026 Weekenders Cup",
+    "margin": "Won by 25 runs",
+    "youtubeUrl": ""
+  },
+  {
+    "date": "2026-06-14",
+    "opponent": "MKCC Weekenders",
+    "result": "W",
+    "warriorsScore": "122/9 (16 Ov)",
+    "opponentScore": "51/9 (16 Ov)",
+    "season": "2026 Weekenders Cup",
+    "margin": "Won by 71 runs",
+    "youtubeUrl": ""
+  },
+  {
+    "date": "2026-06-06",
+    "opponent": "Plainsboro Hunters",
+    "result": "W",
+    "warriorsScore": "122/7 (16 Ov)",
+    "opponentScore": "79/9 (16 Ov)",
+    "season": "2026 Weekenders Cup",
+    "margin": "Won by 43 runs",
+    "youtubeUrl": ""
+  },
+  {
+    "date": "2026-05-31",
+    "opponent": "Princeton Walk",
+    "result": "W",
+    "warriorsScore": "92/7 (16 Ov)",
+    "opponentScore": "65/7 (16 Ov)",
+    "season": "2026 Weekenders Cup",
+    "margin": "Won by 27 runs",
+    "youtubeUrl": ""
+  },
+  {
+    "date": "2026-05-16",
+    "opponent": "Express Rangers",
+    "result": "W",
+    "warriorsScore": "97/5 (15.1 Ov)",
+    "opponentScore": "96/8 (16 Ov)",
+    "season": "2026 Weekenders Cup",
+    "margin": "Won by 5 wickets",
+    "youtubeUrl": ""
+  },
+  {
+    "date": "2026-04-26",
+    "opponent": "Em Sports Club",
+    "result": "W",
+    "warriorsScore": "62/7 (16 Ov)",
+    "opponentScore": "46/10 (13.5 Ov)",
+    "season": "2026 Weekenders Cup",
+    "margin": "Won by 16 runs",
+    "youtubeUrl": ""
+  },
+  {
+    "date": "2026-05-10",
+    "opponent": "Monroe Mavericks",
+    "result": "L",
+    "warriorsScore": "21/10 (9.1 Ov)",
+    "opponentScore": "82/9 (16 Ov)",
+    "season": "2026 Weekenders Cup",
+    "margin": "Lost by 61 runs",
+    "youtubeUrl": ""
+  },
+  {
+    "date": "2026-05-02",
+    "opponent": "JC Warriors",
+    "result": "L",
+    "warriorsScore": "99/10 (15 Ov)",
+    "opponentScore": "107/9 (16 Ov)",
+    "season": "2026 Weekenders Cup",
+    "margin": "Lost by 8 runs",
+    "youtubeUrl": ""
+  },
+  {
+    "date": "2026-04-18",
+    "opponent": "Sreeshti Weekenders",
+    "result": "L",
+    "warriorsScore": "104/9 (16 Ov)",
+    "opponentScore": "105/4 (12.1 Ov)",
+    "season": "2026 Weekenders Cup",
+    "margin": "Lost by 6 wickets",
+    "youtubeUrl": ""
+  }
 ]
