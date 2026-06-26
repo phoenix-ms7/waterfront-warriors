@@ -1,0 +1,41 @@
+{
+  "teamId": "3821",
+  "teamName": "Storm Riders",
+  "season": "2026",
+  "last_updated": "2026-06-26",
+  "batting": [
+    {"rank":1,"name":"Arjun Kapoor","mat":6,"ins":6,"no":1,"runs":198,"balls":219,"avg":39.60,"sr":90.41,"hs":71,"fifties":2,"twentyfives":2},
+    {"rank":2,"name":"Ravi Sethi","mat":6,"ins":6,"no":0,"runs":167,"balls":182,"avg":27.83,"sr":91.76,"hs":54,"fifties":1,"twentyfives":3},
+    {"rank":3,"name":"Pradeep Rao","mat":6,"ins":5,"no":1,"runs":112,"balls":121,"avg":28.00,"sr":92.56,"hs":45,"fifties":0,"twentyfives":2},
+    {"rank":4,"name":"Vikram Singh","mat":5,"ins":5,"no":0,"runs":89,"balls":102,"avg":17.80,"sr":87.25,"hs":33,"fifties":0,"twentyfives":1},
+    {"rank":5,"name":"Sanjay Nair","mat":6,"ins":5,"no":2,"runs":72,"balls":58,"avg":24.00,"sr":124.14,"hs":29,"fifties":0,"twentyfives":1},
+    {"rank":6,"name":"Mohit Verma","mat":4,"ins":3,"no":1,"runs":38,"balls":31,"avg":19.00,"sr":122.58,"hs":21,"fifties":0,"twentyfives":0},
+    {"rank":7,"name":"Tarun Gill","mat":5,"ins":3,"no":2,"runs":27,"balls":22,"avg":27.00,"sr":122.73,"hs":16,"fifties":0,"twentyfives":0}
+  ],
+  "bowling": [
+    {"rank":1,"name":"Deepak Chauhan","mat":6,"inns":6,"overs":22.0,"runs":84,"wkts":10,"bbf":"4/18","dots":82,"econ":3.82,"ave":8.40,"sr":13.2},
+    {"rank":2,"name":"Sanjay Nair","mat":6,"inns":5,"overs":17.3,"runs":78,"wkts":8,"bbf":"3/14","dots":61,"econ":4.46,"ave":9.75,"sr":13.1},
+    {"rank":3,"name":"Tarun Gill","mat":5,"inns":5,"overs":15.0,"runs":76,"wkts":6,"bbf":"2/12","dots":52,"econ":5.07,"ave":12.67,"sr":15.0},
+    {"rank":4,"name":"Vikram Singh","mat":4,"inns":4,"overs":12.0,"runs":63,"wkts":4,"bbf":"2/16","dots":38,"econ":5.25,"ave":15.75,"sr":18.0},
+    {"rank":5,"name":"Mohit Verma","mat":4,"inns":3,"overs":9.0,"runs":52,"wkts":2,"bbf":"1/13","dots":26,"econ":5.78,"ave":26.00,"sr":27.0}
+  ],
+  "head_to_head": {
+    "total_matches": 3,
+    "warriors_wins": 1,
+    "opponent_wins": 2,
+    "last_match": {"date": "2026-04-19", "result": "L", "warriorsScore": "78/7", "opponentScore": "80/3"}
+  },
+  "key_threats": [
+    "Arjun Kapoor — top scorer (198 runs, 39.60 avg). Opens aggressively. Must be dismissed inside powerplay.",
+    "Deepak Chauhan — best bowler in the league (3.82 econ, 10 wkts). Will bowl in powerplay — attack his first over."
+  ],
+  "key_weaknesses": [
+    "Bottom 4 batters struggle with short balls — bowl tight with pace in death overs.",
+    "Mohit Verma leaks runs (5.78 econ) — target him in middle overs when he bowls.",
+    "No specialist spin option — if pitch turns, we hold the advantage."
+  ],
+  "counter_strategy": {
+    "how_to_bowl": "Bowl Ajinkya Pradhan in the powerplay to contain Arjun Kapoor and Ravi Sethi. Use slower balls and off-cutters against Sanjay Nair's middle-order aggression. In death overs, mix yorkers and bouncers — their lower order has exposed weakness against short-pitch bowling.",
+    "matchup_recommendations": "Pratik Joshi's left-arm angle creates awkward lines for their right-hand dominant middle order. Use Karan Patel as a surprise option to break partnerships — his medium pace catches them off-guard."
+  }
+}

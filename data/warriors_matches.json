@@ -1,0 +1,16 @@
+[
+  {"matchId":"20261","season":"2026","date":"2026-04-12","opponent":"Express Rangers","result":"W","warriorsScore":"97/5","opponentScore":"96/8","playerOfMatch":"Ajinkya Pradhan","youtubeUrl":""},
+  {"matchId":"20262","season":"2026","date":"2026-04-19","opponent":"Storm Riders","result":"L","warriorsScore":"78/7","opponentScore":"80/3","playerOfMatch":"","youtubeUrl":""},
+  {"matchId":"20263","season":"2026","date":"2026-05-03","opponent":"Bay Area Blasters","result":"W","warriorsScore":"105/4","opponentScore":"89/6","playerOfMatch":"Vinit Keni","youtubeUrl":""},
+  {"matchId":"20264","season":"2026","date":"2026-05-10","opponent":"Thunder Hawks","result":"W","warriorsScore":"91/6","opponentScore":"88/7","playerOfMatch":"Pratik Joshi","youtubeUrl":""},
+  {"matchId":"20265","season":"2026","date":"2026-05-24","opponent":"Speed Demons","result":"W","warriorsScore":"112/3","opponentScore":"98/8","playerOfMatch":"Malav Shah","youtubeUrl":""},
+
+  {"matchId":"20251","season":"2025","date":"2025-05-04","opponent":"Storm Riders","result":"L","warriorsScore":"88/8","opponentScore":"91/5","playerOfMatch":"","youtubeUrl":""},
+  {"matchId":"20252","season":"2025","date":"2025-05-11","opponent":"Coastal Kings","result":"W","warriorsScore":"118/4","opponentScore":"102/7","playerOfMatch":"Vinit Keni","youtubeUrl":""},
+  {"matchId":"20253","season":"2025","date":"2025-05-18","opponent":"City Challengers","result":"W","warriorsScore":"94/6","opponentScore":"87/9","playerOfMatch":"Ajinkya Pradhan","youtubeUrl":""},
+  {"matchId":"20254","season":"2025","date":"2025-06-01","opponent":"Thunder Hawks","result":"W","warriorsScore":"109/5","opponentScore":"97/7","playerOfMatch":"Rohan Mehta","youtubeUrl":""},
+  {"matchId":"20255","season":"2025","date":"2025-06-08","opponent":"Bay Area Blasters","result":"L","warriorsScore":"76/9","opponentScore":"78/4","playerOfMatch":"","youtubeUrl":""},
+  {"matchId":"20256","season":"2025","date":"2025-06-15","opponent":"Monsoon Men","result":"W","warriorsScore":"132/3","opponentScore":"98/8","playerOfMatch":"Malav Shah","youtubeUrl":""},
+  {"matchId":"20257","season":"2025","date":"2025-06-22","opponent":"Express Rangers","result":"W","warriorsScore":"101/5","opponentScore":"99/6","playerOfMatch":"Ajinkya Pradhan","youtubeUrl":""},
+  {"matchId":"20258","season":"2025","date":"2025-07-06","opponent":"The Sixes","result":"W","warriorsScore":"115/4","opponentScore":"88/8","playerOfMatch":"Karan Patel","youtubeUrl":""}
+]
