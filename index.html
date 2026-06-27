@@ -146,9 +146,9 @@
     .briefing strong { color: var(--gold); }
     .cut-row td { background: #fff3cd !important; color: #856404 !important; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; text-align: center; }
     .cat-badge { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 3px; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; }
-    .cat-mustwin { background: #fde8e8; color: #c0392b; }
+    .cat-mustwin { background: #e8f5e9; color: #2d7a3a; }
     .cat-swing    { background: #fff3cd; color: #856404; }
-    .cat-upset    { background: #e8f5e9; color: #2d7a3a; }
+    .cat-upset    { background: #fde8e8; color: #c0392b; }
     .qual-note { margin-top: 1.1rem; padding: 0.85rem 1rem; background: #f9f8f5; border-left: 3px solid var(--green-mid); border-radius: 0 4px 4px 0; font-size: 0.83rem; line-height: 1.55; color: var(--text-dark); }
 
     /* ── MEDIA ── */
@@ -649,7 +649,7 @@ function renderPlayoffs() {
 
   const qm = d.qualification_model || {};
   document.getElementById('playoffsContent').innerHTML = `
-    <div class="briefing">${d.briefing.replace(/\b(${['Warriors','4th','8 points','playoffs','June 28'].join('|')})\b/g, '<strong>$1</strong>')}</div>
+    <div class="briefing">${d.briefing.replace(/\b(Warriors|5th|29 points|bonus point|must-wins|playoffs|6 must-wins|4 pts|5 pts)\b/g, '<strong>$1</strong>')}</div>
     <div class="two-col">
       <div>
         <p class="sub-label">${d.group} Standings</p>

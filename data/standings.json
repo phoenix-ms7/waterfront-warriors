@@ -26,17 +26,17 @@
     {"rank": 20, "team": "NJKnights",                    "played": 9, "won": 1, "lost": 8, "points": 4,  "nrr": "-3.6340"}
   ],
   "remaining_schedule": [
-    {"date": "2026-06-28", "opponent": "Troy Titans",       "category": "mustwin", "reason": "Group B #13 — 3W/6L, NRR -1.09. Must win to build cushion."},
-    {"date": "2026-07-11", "opponent": "Jersey Aces",       "category": "mustwin", "reason": "Group B #18 — 0W/8L/1NR. Easiest remaining fixture."},
-    {"date": "2026-07-19", "opponent": "Sinclair Lions",    "category": "swing",   "reason": "Group B #9 — 5W/4L, 24 pts. Evenly matched."},
-    {"date": "2026-07-25", "opponent": "Monroe Giants Club","category": "mustwin", "reason": "Group B #19 — 0W/9L, -2 pts. Should be a comfortable win."},
-    {"date": "2026-08-02", "opponent": "Top Guns",          "category": "mustwin", "reason": "Group B #12 — 4W/5L. Winnable with strong bowling."},
-    {"date": "2026-08-08", "opponent": "United Falcons",    "category": "swing",   "reason": "Group B #7 — 6W/3L. Strong mid-table team, tough test."},
-    {"date": "2026-08-16", "opponent": "Pway Cubs",         "category": "upset",   "reason": "Group B #1 — 9W/0L, 44 pts! Unbeaten. Our toughest game."},
-    {"date": "2026-08-22", "opponent": "Giant Slayers",     "category": "upset",   "reason": "Group B #2 — 8W/1L, 39 pts. Second strongest team."},
-    {"date": "2026-08-30", "opponent": "NJ Marvels",        "category": "swing",   "reason": "Group B #4 — 7W/1L/1NR, 34 pts. High-quality opponent."},
-    {"date": "2026-09-12", "opponent": "Firehawks",         "category": "mustwin", "reason": "Group B #14 — 2W/6L/1NR, 11 pts. Good recovery fixture."},
-    {"date": "2026-09-20", "opponent": "EB Strikers",       "category": "mustwin", "reason": "Group B #11 — 4W/5L. Season closer, must take points."}
+    {"date": "2026-06-28", "opponent": "Troy Titans",       "category": "mustwin", "reason": "Group B #13 — 3W/6L, NRR -1.09. Must win + target big margin for 5 pts (bonus)."},
+    {"date": "2026-07-11", "opponent": "Jersey Aces",       "category": "mustwin", "reason": "Group B #18 — 0W/8L/1NR. Weakest remaining fixture — chase a bonus point here."},
+    {"date": "2026-07-19", "opponent": "Sinclair Lions",    "category": "swing",   "reason": "Group B #9 — 5W/4L, 24 pts. Evenly matched — win = 4 or 5 pts, loss stings."},
+    {"date": "2026-07-25", "opponent": "Monroe Giants Club","category": "mustwin", "reason": "Group B #19 — 0W/9L. Near-guaranteed 5 pts — bowl them out early for bonus."},
+    {"date": "2026-08-02", "opponent": "Top Guns",          "category": "mustwin", "reason": "Group B #12 — 4W/5L. Winnable; big margin here boosts NRR and earns 5 pts."},
+    {"date": "2026-08-08", "opponent": "United Falcons",    "category": "swing",   "reason": "Group B #7 — 6W/3L, 29 pts. Strong side — a win (even 4 pts) would be huge."},
+    {"date": "2026-08-16", "opponent": "Pway Cubs",         "category": "upset",   "reason": "Group B #1 — 9W/0L, 44 pts. Unbeaten. Aim to compete hard; a win = 5 pts and a massive NRR swing."},
+    {"date": "2026-08-22", "opponent": "Giant Slayers",     "category": "upset",   "reason": "Group B #2 — 8W/1L, 39 pts. Second strongest team — any win here is a statement."},
+    {"date": "2026-08-30", "opponent": "NJ Marvels",        "category": "swing",   "reason": "Group B #4 — 7W/1L/1NR, 34 pts. High quality — 4 pts from a close win still valuable."},
+    {"date": "2026-09-12", "opponent": "Firehawks",         "category": "mustwin", "reason": "Group B #14 — 2W/6L/1NR, 11 pts. Easy 5 pts — bat big to boost NRR for playoffs."},
+    {"date": "2026-09-20", "opponent": "EB Strikers",       "category": "mustwin", "reason": "Group B #11 — 4W/5L. Season closer — end on a high; 5 pts and strong NRR going in."}
   ],
   "qualification_model": {
     "current_points": 29,
@@ -44,7 +44,10 @@
     "current_rank": 5,
     "8th_place_points": 24,
     "points_gap": 5,
-    "note": "WW sit 5th in Group C with a 5-point cushion over 8th-placed Saffron Sapphire (24 pts). Winning 4 of the next 6 must-win fixtures should comfortably secure a top-8 playoff spot. The three big clashes — Pway Cubs (#1), Giant Slayers (#2), NJ Marvels (#4) — are bonus opportunities."
+    "points_per_win": "4 pts (standard win) or 5 pts (win by big margin — bonus point)",
+    "must_win_games": 6,
+    "max_points_from_mustwins": 30,
+    "note": "Points system: a standard win = 4 pts; winning by a big margin earns a bonus point = 5 pts. WW already sit 5th (29 pts) with a 5-point cushion over 8th place. Six must-win fixtures remain against bottom-half teams. Winning all 6 with bonus points = +30 pts (total 59). Even winning 4 of 6 at 4 pts each = +16 pts (total 45) — comfortably safe. Priority: don't just win the easy games, WIN BIG to bank bonus points and improve NRR. The three Upset games (Pway Cubs, Giant Slayers, NJ Marvels) are bonus opportunities — any win there is a gift."
   },
-  "briefing": "Waterfront Warriors are 5th in Group C with 29 points from 9 games (6W/3L), sitting inside the playoff zone with a 5-point lead over the 8th-place cutoff. All 11 remaining games are against Group B opponents. 7 of those are must-win fixtures against lower-ranked sides. Secure those and the playoff spot is locked."
+  "briefing": "Waterfront Warriors are 5th in Group C with 29 points from 9 games (6W/3L). The points system awards 4 pts for a win and 5 pts for a win by big margin (bonus point). With 11 games remaining — 6 must-wins, 3 swing games, 2 upsets — WW's playoff place is in their own hands. Win the must-win games by healthy margins to stack bonus points. Qualification is very likely; the real target is finishing as high as possible for a favourable playoff draw."
 }
