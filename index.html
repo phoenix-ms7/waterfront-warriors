@@ -89,6 +89,15 @@
     .strategy-banner h2 { font-family: 'Bebas Neue', sans-serif; font-size: 1.7rem; color: var(--gold); letter-spacing: 0.05em; margin-bottom: 0.65rem; }
     .strategy-banner .s-approach { font-size: 0.87rem; color: rgba(255,255,255,0.85); line-height: 1.65; }
     .strategy-banner .form-note { font-size: 0.78rem; color: rgba(200,168,75,0.85); margin-top: 0.65rem; line-height: 1.55; }
+    .opp-form-card { background: #fffbf0; border: 1px solid #e8d97a; border-radius: var(--radius); padding: 0.85rem 1rem; margin-bottom: 1.1rem; }
+    .opp-form-card .opp-form-title { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--green-dark); margin-bottom: 0.45rem; }
+    .opp-form-results { display: flex; gap: 0.35rem; margin-bottom: 0.45rem; }
+    .opp-result-pill { padding: 0.18rem 0.55rem; border-radius: 999px; font-size: 0.7rem; font-weight: 700; }
+    .opp-result-pill.win { background: #e8f5e9; color: #2d7a3a; }
+    .opp-result-pill.loss { background: #fde8e8; color: #c0392b; }
+    .opp-result-pill.nr { background: #f0f0f0; color: #666; }
+    .opp-form-record { font-size: 0.72rem; color: var(--text-muted); margin-bottom: 0.35rem; }
+    .opp-form-analysis { font-size: 0.72rem; color: var(--text); line-height: 1.5; }
 
     .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; margin-bottom: 1.5rem; }
     @media (max-width: 600px) { .two-col { grid-template-columns: 1fr; } }
@@ -509,6 +518,21 @@ function renderStrategy() {
   const matchups = (d.key_matchups || []).map(m => `<li class="matchup-item">${m}</li>`).join('');
   const formNote = d.form_notes ? `<div class="form-note">${d.form_notes}</div>` : '';
 
+  const of = d.opponent_recent_form;
+  const oppFormHtml = of ? `
+    <div class="opp-form-card">
+      <div class="opp-form-title">Opponent Form — ${of.team}</div>
+      <div class="opp-form-record">${of.record}</div>
+      <div class="opp-form-results">
+        <span style="font-size:0.65rem;color:var(--text-muted);align-self:center;margin-right:0.2rem">Last 3:</span>
+        ${(of.last_3_results || []).map(r => {
+          const cls = r === 'W' ? 'win' : r === 'L' ? 'loss' : 'nr';
+          return `<span class="opp-result-pill ${cls}">${r}</span>`;
+        }).join('')}
+      </div>
+      <div class="opp-form-analysis">${of.analysis}</div>
+    </div>` : '';
+
   document.getElementById('strategyContent').innerHTML = `
     <div class="strategy-banner">
       <div class="s-meta">${nm.format} &nbsp;·&nbsp; ${nm.venue || ''} &nbsp;·&nbsp; ${nm.date}</div>
@@ -522,7 +546,8 @@ function renderStrategy() {
         <ul class="bat-order-list">${batOrder}</ul>
       </div>
       <div>
-        <div class="card" style="margin-bottom:1.1rem">
+        ${oppFormHtml}
+        <div class="card">
           <div class="card-title">Key Matchups</div>
           <ul class="matchup-list">${matchups}</ul>
         </div>
@@ -649,7 +674,7 @@ function renderPlayoffs() {
 
   const qm = d.qualification_model || {};
   document.getElementById('playoffsContent').innerHTML = `
-    <div class="briefing">${d.briefing.replace(/\b(Warriors|5th|29 points|bonus point|must-wins|playoffs|6 must-wins|4 pts|5 pts)\b/g, '<strong>$1</strong>')}</div>
+    <div class="briefing">${d.briefing.replace(/\b(Warriors|5th|34 points|34 pts|bonus point|must-wins|playoffs|5 must-wins|4 pts|5 pts|NRR)\b/g, '<strong>$1</strong>')}</div>
     <div class="two-col">
       <div>
         <p class="sub-label">${d.group} Standings</p>
