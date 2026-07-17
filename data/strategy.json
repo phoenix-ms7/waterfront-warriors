@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-06-29",
-  "data_source": "10 completed match scorecards (04/18–06/28/2026) + season aggregate stats",
+  "last_updated": "2026-07-17",
+  "data_source": "11 completed match scorecards (04/18–07/11/2026) + season aggregate stats",
   "next_match": {
-    "opponent": "Jersey Aces",
-    "date": "2026-07-11",
+    "opponent": "Sinclair Lions",
+    "date": "2026-07-19",
     "format": "2026 Weekenders Cup",
-    "venue": "Jersey Aces"
+    "venue": "Waterfront Warriors"
   },
-  "match_approach": "Jersey Aces are Group B's second-worst team — 0W/9L/1NR, 2 points, haven't won all season. This is a BONUS POINT game. Win the toss and BAT FIRST: push for 140–150+ to set a total that forces a big margin win. Then bowl them out under 80. WW are on a 5-game win streak with a settled unit — stick with the same lineup and take the NRR boost going into the tougher second half of the schedule.",
-  "form_notes": "WW have won 5 consecutive matches (Princeton Walk, Plainsboro Hunters, MKCC Weekenders, PRO SQUAD, Troy Titans). Troy Titans were bowled out for 38 and chased in 7 overs — a textbook bonus-point demolition. Vinit Keni is the standout batter (174 runs, avg 29, back-to-back 45 and 55*). Ajinkya Pradhan is in elite form (21 wickets, econ 3.44). Siddhant Kumar broke through with 4 wickets vs Troy Titans. Amanraj Gupta is emerging as a clutch finisher (19* off 11 vs Troy Titans, 13* vs MKCC).",
+  "match_approach": "Sinclair Lions are Group B's #9 side — 5W/6L, 24 pts — not a walkover. They've beaten five teams this season and will be motivated after WW's high-profile win streak. This is a must-compete swing game: treat it like a must-win. Win the toss and BAT FIRST — post 140+ to give WW's bowling attack a meaningful target. Then bowl them out under 90 for a bonus-point win. Siddhant Kumar should be back in the attack after sitting out Jersey Aces. Don't rotate the lineup excessively: field the strongest available XI.",
+  "form_notes": "WW have won 6 consecutive matches (Princeton Walk, Plainsboro Hunters, MKCC Weekenders, PRO SQUAD, Troy Titans, Jersey Aces). The Jersey Aces demolition was clinical: bowled out for 68 in 15 overs (Pradhan, Yuvraj, Rathi, Tyagi, Amanraj all shared wickets), then chased 69 in 5.4 overs. Vinit Keni's 34(14) at SR 242 was the fastest innings of the season — he is in career-best form. Amanraj Gupta took a wicket bowling (2-0-6-1) and continues to be the clutch finisher with the bat. Pradhan had an unusual expensive spell vs Jersey Aces (6.00 econ) — his first in 11 games — but still took 3 wickets; his season numbers remain elite (24 wkts, 3.68 econ).",
 
   "opponent_recent_form": {
-    "team": "Jersey Aces",
+    "team": "Sinclair Lions",
     "group": "Group B",
-    "record": "0W / 9L / 1NR in 10 games — 2 points",
-    "last_3_results": ["L", "L", "L"],
-    "analysis": "Jersey Aces have not won a single game all season. They are second-bottom in Group B above only Monroe Giants Club (-2 pts). Their NRR of -2.91 reflects consistent heavy defeats. No specific player data available — but against a team this out of form, WW should treat this as a NRR-building exercise, not just a 4-point win."
+    "record": "5W / 6L in 11 games — 24 points",
+    "last_3_results": ["L", "L", "W"],
+    "analysis": "Sinclair Lions sit in the bottom half of Group B but are not a pushover — they have won 5 games this season including against some mid-table sides. Their NRR is barely positive (+0.1877), which means their wins have been close and their losses heavy. They've gone 5W/6L from 5W/5L, suggesting they lost their latest game. Treat this as a genuine test: WW cannot show up expecting another Jersey Aces walkover. Their batting has shown enough firepower to punish loose bowling, so Pradhan and Yuvraj must be sharp from ball one."
   },
 
   "batting_order": [
@@ -23,78 +23,78 @@
       "position": 1,
       "name": "Vedant Kumar",
       "role": "Opener",
-      "scorecard_form": "22(18), 13(26), 21(18), 0(6), 27(25), 5(8), 2(4), 7(13), DNB in G9 — consistent first-choice opener",
-      "reason": "The permanent opener. Three 20+ scores in 10 games provide the early platform. His 116+ SR in those big innings shows he attacks when set. Anomalous G10 (bat at #5 chasing 39) — ignore for order purposes."
+      "scorecard_form": "22(18), 13(26), 21(18), 0(6), 27(25), 5(8), 2(4), 7(13), DNB in G10, absent G11 (Jersey Aces) — consistent first-choice opener when available",
+      "reason": "The permanent opener when fit. Three 20+ scores in 10 outings provide the early platform. Absent for Jersey Aces (possibly rested or unavailable) — if he plays vs Sinclair Lions, he goes straight back to #1."
     },
     {
       "position": 2,
       "name": "Yogen Phanse",
       "role": "Aggressive #2",
-      "scorecard_form": "20(13) SR=154, 2(3), 1(7), 8(10), 9(11), 19(12) SR=158, 3(4) vs Troy",
-      "reason": "Opens or bats #2 depending on lineup. Explosive SR (154–158 in his best outings) creates quick momentum. Also bowls containment in middle overs. Keep him early so his power-hitting phase overlaps with the powerplay."
+      "scorecard_form": "20(13) SR=154, 2(3), 1(7), 8(10), 9(11), 19(12) SR=158, 3(4) vs Troy, 17(13) SR=131 vs Jersey Aces",
+      "reason": "Opens or bats #2 depending on lineup. His 17(13) vs Jersey Aces in the powerplay was exactly what was needed. Explosive SR (130–158 in his best outings) creates quick momentum. Keep him early so his power-hitting overlaps with the first few overs."
     },
     {
       "position": 3,
       "name": "Vinit Keni",
       "role": "Anchor / Top Order",
-      "scorecard_form": "24(27), 6(11)*, 29*(39), 0(3), 15(11), 45(31), 55*(41), 0(2) vs Troy (chasing 39 — irrelevant)",
-      "reason": "The cornerstone. When Keni stays in, WW win. His 45 and 55* in back-to-back games are the standout innings of the season. SR of 145 and 134 in those games — he is NOT slow. Protect him at #3 and build the innings around him. A big Keni innings today will set up the bonus point."
+      "scorecard_form": "24(27), 6(11)*, 29*(39), 0(3), 15(11), 45(31), 55*(41), 0(2) vs Troy, 34(14) SR=243 vs Jersey Aces",
+      "reason": "The cornerstone and form batter of the season. His 34(14) at SR 243 vs Jersey Aces — 4 fours and 2 sixes — is the fastest innings WW have had all year. 208 runs at avg 29.71, SR 116 in 11 games. When Keni bats 20+ balls, WW win. Build the innings around him at #3."
     },
     {
       "position": 4,
       "name": "Ajinkya Pradhan",
       "role": "All-rounder / #4",
-      "scorecard_form": "3, 6, 5, 3, 20(19) Retired Hurt, 12(15), 2, 14(16), 15(17) — useful contributions at 4–6",
-      "reason": "Vice-captain and #1 bowler. Bats 4–6 depending on game state. His 20 Retired Hurt and 15 vs PRO SQUAD show he builds platforms. Bats here to conserve energy for full bowling quota."
+      "scorecard_form": "3, 6, 5, 3, 20(19) Retired Hurt, 12(15), 2, 14(16), 15(17), DNB vs Jersey Aces (chased in 5.4 overs) — useful contributions at 4–6",
+      "reason": "Vice-captain and #1 bowler. Bats 4–6 depending on game state. His pattern of 12–20 run contributions when he faces deliveries is valuable. Didn't bat vs Jersey Aces — game was over too quickly."
     },
     {
       "position": 5,
       "name": "Anurag Dabee",
       "role": "#5 Middle Order",
-      "scorecard_form": "12(13), 1(3), 1(4), 8(5), 9(10), 1(5), 1(3), 19*(23), 6*(8) vs Troy — two consecutive not-outs",
-      "reason": "Steady contributor who finishes games — 19* (PRO SQUAD) and 6* (Troy Titans) in the last two. Good between the wickets, reliable under pressure."
+      "scorecard_form": "12(13), 1(3), 1(4), 8(5), 9(10), 1(5), 1(3), 19*(23), 6*(8) vs Troy, 4*(1) vs Jersey Aces — consecutive not-outs",
+      "reason": "Steady contributor who finishes games. Four consecutive not-outs (PRO SQUAD, Troy Titans, Jersey Aces, and MKCC). Good between the wickets, reliable under pressure. Bats at #5 to preserve the middle order."
     },
     {
       "position": 6,
       "name": "Vivek Singh",
       "role": "Captain / Floater — bats 6 OR 7",
-      "scorecard_form": "EARLY ORDER (pos 3–4): 5,0,5,0,0,1 (6 innings). LOWER ORDER (pos 6–7): 11*(14), 52*(27) — 192 SR, 18(14). G10 opened chasing 39 (not meaningful).",
-      "reason": "CRITICAL: Vivek fails at top 4 (11 runs in 6 innings) and wins games from #6–7 (81 runs in 3 innings incl 52* off 27 balls vs Plainsboro). Float him to #5 only if WW are 50+ in 8 overs with wickets intact. Otherwise hold firm at 6–7."
+      "scorecard_form": "EARLY ORDER (pos 3–4): 5,0,5,0,0,1 (6 innings). LOWER ORDER (pos 6–7): 11*(14), 52*(27) — 192 SR, 18(14). vs Jersey Aces: 0*(0) (game won before he needed to bat).",
+      "reason": "CRITICAL: Vivek fails at top 4 (11 runs in 6 innings) and wins games from #6–7 (81 runs in 3 innings incl 52* off 27 balls). Float him to #5 only if WW are 50+ in 8 overs with wickets intact. Otherwise hold firm at 6–7. Do NOT promote him just because Sinclair are the opposition."
     },
     {
       "position": 7,
       "name": "Amanraj Gupta",
-      "role": "Emerging Finisher",
-      "scorecard_form": "3(3), 3(10), 2(2) runout, 1(6), 19*(11) SR=173 vs Troy Titans, 13*(15) vs MKCC",
-      "reason": "NEW INSIGHT: Amanraj has back-to-back match-finishing performances — 13* vs MKCC and 19* off 11 balls vs Troy Titans. His power hitting late in the innings is a genuine weapon. Move him up to #7 ahead of Shah to ensure he faces more balls."
+      "role": "Emerging Finisher / Utility Bowler",
+      "scorecard_form": "3(3), 3(10), 2(2) runout, 1(6), 19*(11) SR=173 vs Troy Titans, 13*(15) vs MKCC, 5(3) at #3 vs Jersey Aces",
+      "reason": "Back-to-back match-finishing performances + a wicket bowling vs Jersey Aces (2-0-6-1, econ 3.00). His utility is growing: 45 runs and now 2 wickets this season. Bat him 7th to guarantee balls in big innings; use him as a bowling option if needed."
     },
     {
       "position": 8,
       "name": "Malav Shah",
       "role": "Power Finisher",
-      "scorecard_form": "29(15) 4×6 SR=193 vs JC Warriors; 0(4); 10*(6) SR=167; 1(4); DNB vs PRO SQUAD; DNB vs Troy",
-      "reason": "The sixer machine at the death. When he gets deliveries in the final overs he hits them over the rope. Has not been dismissed much lately (DNBs) which means WW are finishing games before he bats — a sign of strong top/middle order performance."
+      "scorecard_form": "29(15) 4×6 SR=193 vs JC Warriors; 0(4); 10*(6) SR=167; 1(4); DNB vs PRO SQUAD; DNB vs Troy; DNB vs Jersey Aces",
+      "reason": "The sixer machine at the death. Three consecutive DNBs — WW are winning games before he's needed. When he does bat in close games, he's destructive. Keep him at 8 and hope WW are building a big total that requires his late hitting."
     },
     {
       "position": 9,
       "name": "Siddhant Kumar",
       "role": "#9 / Key Bowler",
-      "scorecard_form": "0(1), 2(4), 9(11), 0(4), 3(7), 14*(9) SR=155 vs MKCC",
-      "reason": "Useful lower-order bat (14* off 9 with 2 sixes vs MKCC). Bats low to preserve full bowling quota — after his 4-wicket haul vs Troy Titans he belongs in the lineup every game."
+      "scorecard_form": "0(1), 2(4), 9(11), 0(4), 3(7), 14*(9) SR=155 vs MKCC; absent/rested vs Jersey Aces",
+      "reason": "After his 4-wkt haul vs Troy Titans and 1-wkt vs MKCC, he sat out Jersey Aces — likely rested. Expect him back vs Sinclair Lions and he should get 3–4 overs. Bats low to protect his bowling quota."
     },
     {
       "position": 10,
       "name": "Yuvraj Rajpurohit",
       "role": "#10 / Key Bowler",
       "scorecard_form": "1(1), 1(1) — tail bat, pure bowling asset",
-      "reason": "13 wickets at 4.22 economy across the season (Fnu + Yuvraj profiles combined). Bats low to preserve his full 4-over bowling allocation."
+      "reason": "16 wickets (merged Fnu + Yuvraj profiles) at 4.19 economy across the season. Took 3 wickets vs Jersey Aces (4-0-16-3, econ 4.00) with 5 wides — captain must watch his line on the day. Bats low to preserve full bowling quota."
     },
     {
       "position": 11,
       "name": "Abhinav Tyagi",
       "role": "Tail / Pace Bowler",
-      "scorecard_form": "3*(2), 2(6), 0(1), 0*(0), 0*(0)",
-      "reason": "Pure bowling asset. Bats tail with licence to swing hard."
+      "scorecard_form": "3*(2), 2(6), 0(1), 0*(0), 0*(0); bowling: 2-0-6-1 (econ 3.00) vs Jersey Aces",
+      "reason": "Pure bowling asset who picked up a wicket vs Jersey Aces cheaply. Bats tail with licence to swing hard. 8 wickets season at 6.15 econ — raw pace creates surprises."
     }
   ],
 
@@ -106,14 +106,14 @@
         {
           "name": "Ajinkya Pradhan",
           "overs": "2 overs",
-          "match_data": "Season: 21 wkts, econ 3.44. Last 3: 1.91 vs Troy (4wkts), 4.25 vs PRO SQUAD (1wkt), 3.00 vs MKCC (4wkts)",
-          "reason": "WW's best bowler by a distance. 21 wickets at 3.44 economy — elite. His Troy Titans spell (3.4-0-7-4, econ 1.91) was match-ending. Opens the attack and always finishes his 4-over quota."
+          "match_data": "Season: 24 wkts, econ 3.68. Last 3: 6.00 vs Jersey Aces (3wkts), 1.91 vs Troy (4wkts), 4.25 vs PRO SQUAD (1wkt)",
+          "reason": "WW's best bowler. 24 wickets at 3.68 economy across 11 games — the most dominant individual stat in WW's lineup. His Jersey Aces spell was unusually expensive (6.00) but he still took 3 wickets. Opens the attack and always finishes his 4-over quota."
         },
         {
           "name": "Namit Rathi",
           "overs": "2 overs",
-          "match_data": "Season econ 2.83; 1.00 econ vs Princeton Walk (3-1-3-2 — 2 wickets for 3 runs!)",
-          "reason": "The surprise PowerPlay weapon. Best economy in the squad. His Princeton Walk game (3 overs, 3 runs, 2 wickets) is the benchmark. Use him in every game he is available."
+          "match_data": "Season: 5 wkts, econ 2.75. vs Jersey Aces: 2-0-5-1 (econ 2.50). vs Princeton Walk: 3-1-3-2 (econ 1.00).",
+          "reason": "The best economy bowler in the squad (2.75 season avg). His Jersey Aces spell (2.50 econ, 1 wkt) continued his excellence. Use him in the PowerPlay every game he is available."
         }
       ],
       "alternative": "If Namit Rathi is not playing, use Siddhant Kumar for a PowerPlay burst — his Troy Titans spell (4-0-12-4, econ 3.00) shows he can strike early."
@@ -124,20 +124,20 @@
         {
           "name": "Malav Shah",
           "overs": "4 overs across middle phase",
-          "match_data": "Last 4 full outings: 4.00 (Princeton Walk), 3.75 (Plainsboro), 3.67 (MKCC), 4.25 (PRO SQUAD), 4.00 (Troy Titans — 2 overs)",
+          "match_data": "Season: 4 wkts, econ 4.05. DNB bowling vs Jersey Aces (not needed). Last 4 full outings: 4.00, 3.75, 3.67, 4.25, 4.00 econ.",
           "reason": "The containment workhorse. Economy between 3.67–4.25 in every recent outing — concedes under run-a-ball through the middle. His wickets are a bonus; his value is dot-ball pressure that forces errors for others."
         },
         {
           "name": "Yuvraj Rajpurohit",
           "overs": "3–4 overs",
-          "match_data": "Last 3: 4-0-11-2 (econ 2.75) vs Troy; 4-0-24-2 (econ 6.00) vs PRO SQUAD; 4-1-9-3 (econ 2.25) vs MKCC",
-          "reason": "13 wickets across the season (two player profiles combined). Variable economy — excellent (2.25–2.75) when on, expensive (6.00) when off. Captain should watch his first 2 overs and rotate him out if leaking. Outstanding death option when in rhythm."
+          "match_data": "Season (merged): 16 wkts, econ 4.19. Last 3: 4-0-16-3 (econ 4.00, 5w) vs Jersey Aces; 4-0-11-2 (econ 2.75) vs Troy; 4-1-9-3 (econ 2.25) vs MKCC",
+          "reason": "16 wickets (combined Fnu + Yuvraj profiles). Variable economy — excellent (2.25–2.75) when on, expensive when leaking wides. 5 wides vs Jersey Aces is a red flag for control. Captain should watch his first 2 overs and be ready to rotate him out if he sprays."
         },
         {
           "name": "Siddhant Kumar",
           "overs": "3–4 overs",
-          "match_data": "Last 3: 4-0-12-4 (econ 3.00) vs Troy Titans! 3-1-8-1 (econ 2.67) vs MKCC, 2.0-0-7-0 vs PRO SQUAD",
-          "reason": "UPGRADED: His 4-wicket haul vs Troy Titans (12 runs in 4 overs) is the best individual bowling performance of the season alongside Pradhan. Excellent in last two outings. Give him 3–4 overs now, not 2."
+          "match_data": "Season: 10 wkts, econ 5.95. Rested vs Jersey Aces. Last 2: 4-0-12-4 (econ 3.00) vs Troy Titans; 3-1-8-1 (econ 2.67) vs MKCC",
+          "reason": "UPGRADED: Two consecutive excellent spells (Troy Titans + MKCC) earn him 3–4 overs now. Rested vs Jersey Aces — should be fresh and sharp vs Sinclair Lions. Give him his full overs."
         }
       ]
     },
@@ -157,40 +157,42 @@
         {
           "name": "Abhinav Tyagi",
           "overs": "1 over wildcard",
-          "match_data": "Season: 7 wkts, econ 6.50 — takes wickets but expensive",
-          "reason": "Raw pace can surprise at the death. Use as a 1-over option if the partnership needs breaking and both Pradhan/Yuvraj overs are done."
+          "match_data": "Season: 8 wkts, econ 6.15. vs Jersey Aces: 2-0-6-1 (econ 3.00) — cheapest spell of his season.",
+          "reason": "Raw pace can surprise at the death. His Jersey Aces spell (3.00 econ) is his best this season — use as a 1-over option if the partnership needs breaking and both Pradhan/Yuvraj overs are done."
         }
       ]
     },
     "economy_first_bowlers": {
-      "note": "These bowlers build pressure through dot balls that lead to wickets for others. Updated after 10 matches.",
+      "note": "These bowlers build pressure through dot balls that lead to wickets for others. Updated after 11 matches.",
       "bowlers": [
-        {"name": "Ajinkya Pradhan",     "season_econ": "3.44", "wickets": 21, "note": "Economy AND wickets — elite, best in squad by far"},
-        {"name": "Namit Rathi",         "season_econ": "2.83", "wickets": 4,  "note": "Best economy in squad — forces errors through dots"},
-        {"name": "Malav Shah",          "season_econ": "4.05", "wickets": 4,  "note": "Concedes under run-a-ball — crucial containment role"},
-        {"name": "Siddhant Kumar",      "season_econ": "5.95", "wickets": 10, "note": "High wickets but economy variable — manage his overs carefully"},
-        {"name": "Yuvraj Rajpurohit",   "season_econ": "4.22", "wickets": 13, "note": "Good wickets + economy when on — use full quota when in rhythm"}
+        {"name": "Namit Rathi",         "season_econ": "2.75", "wickets": 5,  "note": "Best economy in squad — forces errors through dots; use in PowerPlay every game"},
+        {"name": "Ajinkya Pradhan",     "season_econ": "3.68", "wickets": 24, "note": "Economy AND wickets — elite, best in squad by far; one expensive spell (Jersey Aces) is an anomaly"},
+        {"name": "Malav Shah",          "season_econ": "4.05", "wickets": 4,  "note": "Concedes under run-a-ball — crucial containment role in middle overs"},
+        {"name": "Yuvraj Rajpurohit",   "season_econ": "4.19", "wickets": 16, "note": "Good wickets + economy when on — watch for wides, rotate if leaking (5 wides vs Jersey Aces)"},
+        {"name": "Siddhant Kumar",      "season_econ": "5.95", "wickets": 10, "note": "Economy variable but has two consecutive excellent spells — now gets 3–4 overs"}
       ]
     }
   },
 
   "key_matchups": [
-    "Win the toss and BAT FIRST — against Jersey Aces, batting first and posting 140–150+ is the path to the bonus point (win by 60+ runs). Chasing a small total does nothing for NRR.",
-    "Ajinkya Pradhan bowls his FULL 4-over quota — 21 wickets at 3.44 economy is the bedrock. Use 2 overs up front in the PowerPlay, 2 at death. Non-negotiable.",
-    "Siddhant Kumar has earned more overs — his 4-wicket haul vs Troy Titans (4-0-12-4) is the best bowling performance WW have had from him all season. Give him 3–4 overs now.",
-    "Vivek Singh MUST bat 6 or 7 — his top-order record (11 runs in 6 innings) versus lower-order record (81 runs in 3 innings incl. 52* off 27) is night and day. Do not be tempted to promote him just because the opposition is weak.",
-    "Vinit Keni should anchor and bat big — a 40+ from Keni sets up 140+. Build the innings around him at #3.",
-    "Amanraj Gupta at #7 — his last two innings (13* vs MKCC, 19* off 11 vs Troy Titans) show he is a genuine finisher. He should bat ahead of Shah to guarantee more balls."
+    "Win the toss and BAT FIRST — Sinclair Lions (5W/6L) are competitive enough that chasing a low total could be precarious. Post 140+ and set a target WW's bowling can defend.",
+    "Ajinkya Pradhan bowls his FULL 4-over quota — 24 wickets at 3.68 is the bedrock. Use 2 overs up front in the PowerPlay, 2 at death. Non-negotiable even after his Jersey Aces blip.",
+    "Siddhant Kumar is BACK — rested vs Jersey Aces, expect him fresh. Give him 3–4 overs early in the middle phase. His two-game run of 4-0-12-4 and 3-1-8-1 makes him WW's second-best bowling option.",
+    "Vivek Singh MUST bat 6 or 7 — his top-order record (11 runs in 6 innings) versus lower-order record (81 runs in 3 innings incl. 52* off 27) is conclusive. No exceptions, even against weaker teams.",
+    "Vinit Keni should bat big — fresh off a 34(14) at SR 243. When he's in this form, the target difference between a 120 total and a 150 total is mostly him. Protect him and let him bat deep.",
+    "Watch Yuvraj's wides — 5 wides vs Jersey Aces cost 5 free runs. Against a team with real batters, those will be punished. Captain should pull him after 2 overs if he's spraying, and bring him back when settled.",
+    "Amanraj Gupta is a genuine utility asset — use him for 1–2 bowling overs if needed (econ 3.00 vs Jersey Aces). His batting at #7 continues to produce when the game needs finishing."
   ],
 
   "scorecard_insights": {
     "vivek_singh_pattern": "Positions 3–4: 5,0,5,0,0,1 = 11 runs in 6 innings. Positions 6–7: 11*,52*,18 = 81 runs in 3 innings. Data is conclusive — he wins games from down the order.",
-    "vinit_keni_anchor": "When Keni bats 20+ balls, WW win. 45(31) and 55*(41) in the last two batting-first games anchored totals of 122 and 111. Non-negotiable at #3.",
-    "pradhan_dominance": "10 games, 21 wickets, econ 3.44. Best spells: 1.00 vs Em Sports, 1.50 vs Princeton Walk, 1.91 vs Troy Titans, 2.33 vs Plainsboro, 3.00 vs MKCC. There is no better bowler in this squad — or arguably in the league.",
-    "siddhant_breakthrough": "Troy Titans: 4-0-12-4 (econ 3.00). MKCC: 3-1-8-1 (econ 2.67). Siddhant has two consecutive excellent spells after months of inconsistency. He should now start with 3–4 overs, not 2.",
-    "amanraj_finisher": "NEW: Amanraj Gupta has 19*(11, SR=173) vs Troy Titans and 13*(15) vs MKCC as a #6–7. He is becoming the clutch finisher WW needed behind Malav Shah. Bat him 7th.",
-    "rathi_powerplay_weapon": "Princeton Walk: 3-1-3-2 (econ 1.00). Rathi in the PowerPlay is a genuine game-changer. Use him every match he plays.",
-    "malav_shah_containment": "Last 5 bowling outings: 4.00, 3.75, 3.67, 4.25, 4.00 econ — the most consistent containment bowler in the squad after Pradhan.",
+    "vinit_keni_anchor": "208 runs, avg 29.71, SR 116 in 11 games. Last 3 innings: 55*(41), 0(2) vs Troy (low chase), 34(14) SR=243 vs Jersey Aces. He is the unquestioned cornerstone of WW's batting.",
+    "pradhan_dominance": "11 games, 24 wickets, econ 3.68. His Jersey Aces spell (6.00 econ) is the first time he's gone above 4.50 this season. Still the best bowler WW have — or arguably in Group C.",
+    "siddhant_breakthrough": "Troy Titans: 4-0-12-4 (econ 3.00). MKCC: 3-1-8-1 (econ 2.67). Rested vs Jersey Aces. Two consecutive elite spells + fresh legs = expect big things vs Sinclair Lions.",
+    "amanraj_finisher": "Batting: 19*(11, SR=173) vs Troy, 13*(15) vs MKCC, 5(3) at #3 vs Jersey Aces. Bowling: 2-0-6-1 (econ 3.00) vs Jersey Aces. He is becoming WW's all-round utility player — bat #7, bowl 1–2 overs if needed.",
+    "rathi_powerplay_weapon": "Princeton Walk: 3-1-3-2 (econ 1.00). Jersey Aces: 2-0-5-1 (econ 2.50). Rathi in the PowerPlay is a genuine game-changer. Use him every match he plays.",
+    "malav_shah_containment": "Season: 22 overs, econ 4.05. Most consistent containment bowler in the squad after Pradhan. DNB bowling vs Jersey Aces — not needed in a 15-over bowl-out.",
+    "yuvraj_wides_warning": "5 wides vs Jersey Aces (4-0-16-3, econ 4.00) — still got 3 wickets but the extras are costly. His merged stats (16 wkts, 4.19 econ) are strong but control must be tighter vs real batting lineups.",
     "collapse_warning": "Monroe Mavericks (G4): WW collapsed to 21 all out in 9.1 overs. That fragility still lives in this batting order when the top 3 fall early. Protect Keni at all costs — the lower order cannot rescue a 3-wicket collapse without him."
   }
 }

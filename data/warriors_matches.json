@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-07-11",
+    "opponent": "Jersey Aces",
+    "result": "W",
+    "warriorsScore": "71/4 (5.4 Ov)",
+    "opponentScore": "68/10 (15.0 Ov)",
+    "season": "2026 Weekenders Cup",
+    "margin": "Won by 6 wickets",
+    "youtubeUrl": "https://www.youtube.com/watch?v=aJmARUPrl0o"
+  },
+  {
     "date": "2026-06-28",
     "opponent": "Troy Titans",
     "result": "W",
@@ -7,7 +17,7 @@
     "opponentScore": "38/10 (13.4 Ov)",
     "season": "2026 Weekenders Cup",
     "margin": "Won by 5 wickets",
-    "youtubeUrl": ""
+    "youtubeUrl": "https://www.youtube.com/watch?v=_jrtYBkPKa0"
   },
   {
     "date": "2026-06-20",
